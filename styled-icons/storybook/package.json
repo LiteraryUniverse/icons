@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "name": "@styled-icons/storybook",
+  "version": "10.6.2",
+  "license": "MIT",
+  "funding": {
+    "type": "GitHub",
+    "url": "https://github.com/sponsors/jacobwgillespie"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build-storybook": "build-storybook",
+    "clean": "rm -rf stories",
+    "generate": "node generate-stories.js",
+    "storybook": "start-storybook -p 6006"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "styled-components": "^5.3.6",
+    "styled-icons": "^10.47.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.7",
+    "@storybook/addons": "^6.5.15",
+    "@storybook/react": "^6.5.15",
+    "babel-loader": "^9.1.0",
+    "chromatic": "^6.14.0",
+    "fs-extra": "^11.1.0",
+    "storybook-addon-turbo-build": "^1.1.0",
+    "webpack": "^5.75.0"
+  }
+}

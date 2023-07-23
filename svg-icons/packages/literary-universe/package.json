@@ -1,0 +1,34 @@
+{
+  "name": "@literary-universe/svg-icons",
+  "version": "0.2.0",
+  "license": "MIT",
+  "description": "Literary Universe icons available as optimized SVGs",
+  "author": "Jan Dvorak <jdvorak@literaryuniverse.com>",
+  "homepage": "https://github.com/LiteraryUniverse/icons",
+  "repository": "git://github.com/LiteraryUniverse/icons.git",
+  "keywords": [
+    "svg-icons"
+  ],
+  "funding": {
+    "type": "GitHub",
+    "url": "https://github.com/sponsors/storytellercz"
+  },
+  "files": [
+    "*.json",
+    "*.svg"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "build-pack",
+    "clean": "clean-pack"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@storybook/html": "^6.5.15",
+    "@svg-icons/pack-builder": "^1.2.0",
+    "core-js": "^3.26.1",
+    "tiny-glob": "^0.2.9"
+  }
+}

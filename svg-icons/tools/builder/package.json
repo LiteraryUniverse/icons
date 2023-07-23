@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "name": "@svg-icons/pack-builder",
+  "version": "1.2.0",
+  "license": "MIT",
+  "funding": {
+    "type": "GitHub",
+    "url": "https://github.com/sponsors/jacobwgillespie"
+  },
+  "bin": {
+    "build-pack": "./build-pack.js",
+    "clean-pack": "./clean-pack.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "fs-extra": "^11.1.0",
+    "svg-parser": "^2.0.4",
+    "svgo": "^3.0.2",
+    "tiny-glob": "^0.2.9",
+    "typescript": "^4.9.4"
+  }
+}

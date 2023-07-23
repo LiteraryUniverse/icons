@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "tools/*"
+  ],
+  "scripts": {
+    "build": "pnpm run -r build",
+    "build-storybook": "build-storybook -c .storybook -o .out",
+    "clean": "pnpm run -r clean",
+    "fmt": "prettier --write './**/*.{ts,tsx,js,md,json}'",
+    "fmt:check": "prettier --list-different './**/*.{ts,tsx,js,md,json}'",
+    "release": "yarn build && yarn changeset publish",
+    "storybook": "start-storybook -p 5000"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@changesets/changelog-github": "^0.4.8",
+    "@changesets/cli": "^2.26.0",
+    "@changesets/get-github-info": "^0.5.2",
+    "@monorepolint/cli": "0.4.0",
+    "@monorepolint/core": "0.4.0",
+    "@percy/cli": "^1.16.0",
+    "@percy/storybook": "^4.3.4",
+    "@storybook/builder-webpack5": "^6.5.15",
+    "@storybook/html": "^6.5.15",
+    "@storybook/manager-webpack5": "^6.5.15",
+    "@storybook/react": "^6.5.15",
+    "@types/node": "^18.11.17",
+    "babel-loader": "^9.1.0",
+    "core-js": "^3.26.1",
+    "dotenv": "^16.0.3",
+    "fast-case": "^1.7.0",
+    "prettier": "^2.8.1",
+    "raw-loader": "^4.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "require-from-string": "^2.0.2",
+    "tiny-glob": "^0.2.9",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4",
+    "webpack": "^5.75.0"
+  }
+}

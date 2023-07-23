@@ -1,0 +1,43 @@
+{
+  "name": "@literary-universe/styled-icons",
+  "version": "0.2.0",
+  "license": "MIT",
+  "description": "Literary Universe icons available as Styled Components",
+  "author": "Jan Dvorak <jdvorak@literaryuniverse.com>",
+  "homepage": "https://github.com/LiteraryUniverse/icons",
+  "repository": "git://github.com/LiteraryUniverse/icons.git",
+  "keywords": [
+    "styled-icons"
+  ],
+  "funding": {
+    "type": "GitHub",
+    "url": "https://github.com/sponsors/storytellercz"
+  },
+  "main": "./index.js",
+  "module": "./index.esm.js",
+  "types": "./index.d.ts",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "clean-package",
+    "generate": "generate-icon-package @literary-universe/svg-icons"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.20.7",
+    "@styled-icons/styled-icon": "^10.7.0"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "styled-components": "*"
+  },
+  "devDependencies": {
+    "@styled-icons/pack-builder": "^10.7.0",
+    "@literary-universe/svg-icons": "0.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "styled-components": "^5.3.11"
+  }
+}
