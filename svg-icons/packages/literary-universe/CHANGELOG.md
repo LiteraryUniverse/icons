@@ -1,5 +1,10 @@
 # Literary Universe SVG icons
 
+## v0.3.0
+
+- Another set of icons
+- Add icons to Git
+
 ## v0.2.0
 
 - Add most icons
