@@ -19,6 +19,22 @@ You use these packages as you would any [svg-icons](https://github.com/svg-icons
 
 ## Adding new icon
 
+All the icons should be designed by Literary Universe's design crew, following some conventions:
+
+- The view box must have the dimensions of 24x24 units;
+- Any horizontal assimetry must follow the left-to-right direction.
+- The icon must be published on Figma.
+
+As the icons might be arbitrarily scaled, the chosen source format for individual icon graphics is
+SVG. As Figma can export graphics with some additional SVG attributes and elements, they must be
+removed:
+
+- The `<svg>` element must contain only two attributes: `viewBox` (probably with the value of`"0 0 32 32"`) and
+  `xmlns`;
+- XLink references (e.g. masks and clip paths) must be discarded;
+- The `<path>` elements must keep only the `d` attribute, with no additional styling attribute;
+- `<g>` and other elements must be stripped by [Iconli optimization tooling](https://iconly.io/tools/svg-convert-stroke-to-fill), keeping only `<path>` elements.
+
 ### Exporting from Figma
 
 When exporting from Figma select the icon directly so that Figma offers you the SVG code in the sidebar.
@@ -38,6 +54,12 @@ Open up the file and make sure that `fill="none"` is not present in the top `<sv
 Finally you can optimize the SVG code in [SVGOMG](https://jakearchibald.github.io/svgomg/) tool. Besides the defaults it is recommended to turn on multipass, pretify markup, reduce duplicate elements with links, remove out-of-bounds paths and prefer viewBox to width/height.
 
 Copy the resulting code (or override the existing file) in the resources folder.
+
+The filenames define the icon names, so they
+should stick with a basic rule: **an icon name must describe the icon shape, not its utility**. For instance:
+
+- [ ] `message.svg` (wrong)
+- [x] `balloon.svg` (right)
 
 ### svg-icons
 
