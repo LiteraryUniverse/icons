@@ -41,11 +41,17 @@ const generate = async () => {
   const manifest = []
 
   const iconFiles = uniqueIcons.map(async (icon) => {
-    const {data} = await svgo.optimize(icon.source, { multipass: true })
-    await fs.writeFile(`${icon.originalName}.svg`, data)
-    const metadata = {name: icon.originalName, ...svgMetadata(data)}
-    manifest.push(metadata)
-    await fs.writeJSON(`${icon.originalName}.json`, metadata)
+    try {
+      const {data} = await svgo.optimize(icon.source, { multipass: true })
+      await fs.writeFile(`${icon.originalName}.svg`, data)
+      const metadata = {name: icon.originalName, ...svgMetadata(data)}
+      manifest.push(metadata)
+      await fs.writeJSON(`${icon.originalName}.json`, metadata)
+    } catch (e) {
+      console.log(icon.originalName)
+      console.error(e)
+     throw new Error(e)
+    }
   })
 
   await Promise.all(iconFiles)
