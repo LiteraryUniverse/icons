@@ -1,5 +1,11 @@
 # Literary Universe SVG icons
 
+## v0.4.0
+
+- New icons
+- Optimized size of original icons
+- Renaming of some icons for better consistency
+
 ## v0.3.0
 
 - Another set of icons
