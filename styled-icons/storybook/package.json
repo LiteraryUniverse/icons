@@ -31,6 +31,6 @@
     "chromatic": "^6.14.0",
     "fs-extra": "^11.1.0",
     "storybook-addon-turbo-build": "^1.1.0",
-    "webpack": "^5.75.0"
+    "webpack": "^5.76.0"
   }
 }
