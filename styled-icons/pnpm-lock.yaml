@@ -40,7 +40,7 @@ importers:
         version: 0.5.0-alpha.97
       '@storybook/builder-webpack5':
         specifier: ^6.5.16
-        version: 6.5.16(react-dom@18.2.0)(react@18.2.0)(regenerator-runtime@0.13.11)(typescript@4.9.5)
+        version: 6.5.16(react-dom@18.2.0)(react@18.2.0)(regenerator-runtime@0.14.0)(typescript@4.9.5)
       '@storybook/manager-webpack5':
         specifier: ^6.5.16
         version: 6.5.16(react-dom@18.2.0)(react@18.2.0)(typescript@4.9.5)
@@ -97,8 +97,8 @@ importers:
         version: 10.7.0(react@18.2.0)(styled-components@5.3.11)
     devDependencies:
       '@literary-universe/svg-icons':
-        specifier: 0.4.0
-        version: 0.4.0
+        specifier: 0.5.0
+        version: 0.5.0
       '@styled-icons/pack-builder':
         specifier: ^10.7.0
         version: link:../../tools/builder
@@ -2492,8 +2492,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@literary-universe/svg-icons@0.4.0:
-    resolution: {integrity: sha512-H5+Xi0B/8XvG8tRTR/Q8AItdvB/Nx7zBTlaOEgB5yXQteTLL4ho0VE3eN3pmoFRgZpof7rLpgDEakYo+8v3PXg==}
+  /@literary-universe/svg-icons@0.5.0:
+    resolution: {integrity: sha512-pJCRqlJZ+GdKooyOCDmhNZHp0rCyWUwWRWHV561yvi51aPMCwQ9/mKdDb0utpQnwfGAoecCGNnFzNRSdWuMfKg==}
     dev: true
 
   /@manypkg/find-root@1.1.0:
@@ -3112,7 +3112,7 @@ packages:
       - webpack-command
     dev: true
 
-  /@storybook/builder-webpack5@6.5.16(react-dom@18.2.0)(react@18.2.0)(regenerator-runtime@0.13.11)(typescript@4.9.5):
+  /@storybook/builder-webpack5@6.5.16(react-dom@18.2.0)(react@18.2.0)(regenerator-runtime@0.14.0)(typescript@4.9.5):
     resolution: {integrity: sha512-kh8Sofm1sbijaHDWtm0sXabqACHVFjikU/fIkkW786kpjoPIPIec1a+hrLgDsZxMU3I7XapSOaCFzWt6FjVXjg==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -3129,7 +3129,7 @@ packages:
       '@storybook/channels': 6.5.16
       '@storybook/client-api': 6.5.16(react-dom@18.2.0)(react@18.2.0)
       '@storybook/client-logger': 6.5.16
-      '@storybook/components': 6.5.16(react-dom@18.2.0)(react@18.2.0)(regenerator-runtime@0.13.11)
+      '@storybook/components': 6.5.16(react-dom@18.2.0)(react@18.2.0)(regenerator-runtime@0.14.0)
       '@storybook/core-common': 6.5.16(react-dom@18.2.0)(react@18.2.0)(typescript@4.9.5)
       '@storybook/core-events': 6.5.16
       '@storybook/node-logger': 6.5.16
@@ -3344,6 +3344,25 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       regenerator-runtime: 0.13.11
+      util-deprecate: 1.0.2
+    dev: true
+
+  /@storybook/components@6.5.16(react-dom@18.2.0)(react@18.2.0)(regenerator-runtime@0.14.0):
+    resolution: {integrity: sha512-LzBOFJKITLtDcbW9jXl0/PaG+4xAz25PK8JxPZpIALbmOpYWOAPcO6V9C2heX6e6NgWFMUxjplkULEk9RCQMNA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+      regenerator-runtime: '*'
+    dependencies:
+      '@storybook/client-logger': 6.5.16
+      '@storybook/csf': 0.0.2--canary.4566f4d.1
+      '@storybook/theming': 6.5.16(react-dom@18.2.0)(react@18.2.0)
+      core-js: 3.31.1
+      memoizerific: 1.11.3
+      qs: 6.11.2
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      regenerator-runtime: 0.14.0
       util-deprecate: 1.0.2
     dev: true
 
@@ -3630,7 +3649,7 @@ packages:
     dependencies:
       '@discoveryjs/json-ext': 0.5.7
       '@storybook/builder-webpack4': 6.5.15(react-dom@18.2.0)(react@18.2.0)(regenerator-runtime@0.13.11)(typescript@4.9.5)
-      '@storybook/builder-webpack5': 6.5.16(react-dom@18.2.0)(react@18.2.0)(regenerator-runtime@0.13.11)(typescript@4.9.5)
+      '@storybook/builder-webpack5': 6.5.16(react-dom@18.2.0)(react@18.2.0)(regenerator-runtime@0.14.0)(typescript@4.9.5)
       '@storybook/core-client': 6.5.15(react-dom@18.2.0)(react@18.2.0)(typescript@4.9.5)(webpack@4.46.0)
       '@storybook/core-common': 6.5.15(react-dom@18.2.0)(react@18.2.0)(typescript@4.9.5)
       '@storybook/core-events': 6.5.15
@@ -3708,7 +3727,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@storybook/builder-webpack5': 6.5.16(react-dom@18.2.0)(react@18.2.0)(regenerator-runtime@0.13.11)(typescript@4.9.5)
+      '@storybook/builder-webpack5': 6.5.16(react-dom@18.2.0)(react@18.2.0)(regenerator-runtime@0.14.0)(typescript@4.9.5)
       '@storybook/core-client': 6.5.15(react-dom@18.2.0)(react@18.2.0)(typescript@4.9.5)(webpack@5.88.2)
       '@storybook/core-server': 6.5.15(@storybook/builder-webpack5@6.5.16)(@storybook/manager-webpack5@6.5.16)(react-dom@18.2.0)(react@18.2.0)(typescript@4.9.5)
       '@storybook/manager-webpack5': 6.5.16(react-dom@18.2.0)(react@18.2.0)(typescript@4.9.5)
@@ -4035,7 +4054,7 @@ packages:
       '@babel/preset-react': 7.22.5(@babel/core@7.20.7)
       '@pmmmwh/react-refresh-webpack-plugin': 0.5.10(react-refresh@0.11.0)(webpack@5.88.2)
       '@storybook/addons': 6.5.15(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/builder-webpack5': 6.5.16(react-dom@18.2.0)(react@18.2.0)(regenerator-runtime@0.13.11)(typescript@4.9.5)
+      '@storybook/builder-webpack5': 6.5.16(react-dom@18.2.0)(react@18.2.0)(regenerator-runtime@0.14.0)(typescript@4.9.5)
       '@storybook/client-logger': 6.5.15
       '@storybook/core': 6.5.15(@storybook/builder-webpack5@6.5.16)(@storybook/manager-webpack5@6.5.16)(react-dom@18.2.0)(react@18.2.0)(typescript@4.9.5)(webpack@5.88.2)
       '@storybook/core-common': 6.5.15(react-dom@18.2.0)(react@18.2.0)(typescript@4.9.5)

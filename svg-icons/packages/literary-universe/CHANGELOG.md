@@ -1,5 +1,9 @@
 # Literary Universe SVG icons
 
+## v0.4.1
+
+- Fix typo in FacebookMessenger icon
+
 ## v0.4.0
 
 - New icons
