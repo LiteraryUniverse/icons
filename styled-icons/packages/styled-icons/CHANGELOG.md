@@ -1,5 +1,10 @@
 # @literary-universe/icons
 
+## v0.5.x
+
+- New icons bringing the total to 199
+- Patch releases fixes issues with icons
+
 ## v0.4.0
 
 - New icons
