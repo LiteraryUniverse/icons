@@ -14,7 +14,7 @@
     "storybook": "start-storybook -p 5000"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.10",
+    "@babel/core": "^7.22.20",
     "@changesets/changelog-github": "^0.4.8",
     "@changesets/cli": "^2.26.2",
     "@changesets/get-github-info": "^0.5.2",
