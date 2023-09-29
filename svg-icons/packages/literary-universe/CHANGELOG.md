@@ -1,5 +1,14 @@
 # Literary Universe SVG icons
 
+## v0.6.0
+
+- New icons (249 in total)
+- File icons now start with `icon-`
+
+## v0.5.0
+
+- New icons
+
 ## v0.4.1
 
 - Fix typo in FacebookMessenger icon
