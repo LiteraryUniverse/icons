@@ -1,5 +1,9 @@
 # @literary-universe/icons
 
+## v0.6.0
+
+- New icons
+
 ## v0.5.x
 
 - New icons bringing the total to 199
