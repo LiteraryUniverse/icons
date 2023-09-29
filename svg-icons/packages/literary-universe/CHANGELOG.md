@@ -1,5 +1,9 @@
 # Literary Universe SVG icons
 
+## v0.6.1
+
+- Fix Twitch icon name
+
 ## v0.6.0
 
 - New icons (249 in total)
