@@ -51,7 +51,7 @@ Save the file in `./svg-icons/packages/literary-universe/source`
 
 Open up the file and make sure that `fill="none"` is not present in the top `<svg>` element.
 
-Finally you can optimize the SVG code in [SVGOMG](https://jakearchibald.github.io/svgomg/) tool. Besides the defaults it is recommended to turn on multipass, pretify markup, reduce duplicate elements with links, remove out-of-bounds paths and prefer viewBox to width/height.
+Finally, you can optimize the SVG code in [SVGOMG](https://jakearchibald.github.io/svgomg/) tool. Besides the defaults it is recommended to turn on multipass, pretify markup, reduce duplicate elements with links, remove out-of-bounds paths and prefer viewBox to width/height.
 
 Copy the resulting code (or override the existing file) in the resources folder.
 

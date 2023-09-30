@@ -1,5 +1,11 @@
 # Literary Universe SVG icons
 
+## v0.6.2
+
+- Fix line graph icon and add bar chart icon
+- Added Blog and Comment-filled icons
+- - Remove duplicate icons message and access-time (Hourglass)
+
 ## v0.6.1
 
 - Fix Twitch icon name

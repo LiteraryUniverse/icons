@@ -1,5 +1,11 @@
 # @literary-universe/icons
 
+## v0.6.2
+
+- Fix line graph icon and add bar chart icon
+- Added Blog and CommentFilled icons
+- Remove duplicate icons Message and AccessTime (Hourglass)
+
 ## v0.6.1
 
 - Fix Twitch icon name
