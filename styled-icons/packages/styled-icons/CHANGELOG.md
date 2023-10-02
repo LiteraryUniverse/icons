@@ -1,5 +1,12 @@
 # @literary-universe/icons
 
+## v0.6.4
+
+- Add ApplePay
+- Add DinersClub
+- Add MasterCard
+- Add Stripe
+
 ## v0.6.3
 
 - Add missing credit cards icons

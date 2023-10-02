@@ -9,22 +9,22 @@ importers:
   .:
     devDependencies:
       '@babel/cli':
-        specifier: ^7.22.10
+        specifier: ^7.22.15
         version: 7.22.15(@babel/core@7.22.20)
       '@babel/core':
-        specifier: ^7.22.10
+        specifier: ^7.22.20
         version: 7.22.20
       '@babel/plugin-transform-runtime':
-        specifier: ^7.22.10
+        specifier: ^7.22.15
         version: 7.22.15(@babel/core@7.22.20)
       '@babel/preset-env':
-        specifier: ^7.22.10
+        specifier: ^7.22.20
         version: 7.22.20(@babel/core@7.22.20)
       '@babel/preset-react':
-        specifier: ^7.22.5
+        specifier: ^7.22.15
         version: 7.22.15(@babel/core@7.22.20)
       '@babel/preset-typescript':
-        specifier: ^7.22.5
+        specifier: ^7.22.15
         version: 7.22.15(@babel/core@7.22.20)
       '@changesets/changelog-github':
         specifier: ^0.4.8
@@ -33,11 +33,11 @@ importers:
         specifier: ^2.26.2
         version: 2.26.2
       '@monorepolint/cli':
-        specifier: ^0.5.0-alpha.96
+        specifier: ^0.5.0-alpha.108
         version: 0.5.0-alpha.108
       '@monorepolint/core':
-        specifier: 0.5.0-alpha.97
-        version: 0.5.0-alpha.97
+        specifier: 0.5.0-alpha.108
+        version: 0.5.0-alpha.108
       '@storybook/builder-webpack5':
         specifier: ^6.5.16
         version: 6.5.16(react-dom@18.2.0)(react@18.2.0)(regenerator-runtime@0.14.0)(typescript@4.9.5)
@@ -45,14 +45,14 @@ importers:
         specifier: ^6.5.16
         version: 6.5.16(react-dom@18.2.0)(react@18.2.0)(typescript@4.9.5)
       '@types/node':
-        specifier: ^18.17.3
-        version: 18.17.18
+        specifier: ^18.17.19
+        version: 18.18.1
       '@types/react':
-        specifier: ^18.2.19
-        version: 18.2.22
+        specifier: ^18.2.24
+        version: 18.2.24
       '@types/styled-components':
-        specifier: ^5.1.26
-        version: 5.1.27
+        specifier: ^5.1.28
+        version: 5.1.28
       babel-plugin-styled-components:
         specifier: ^2.1.4
         version: 2.1.4(@babel/core@7.22.20)(styled-components@5.3.11)
@@ -60,13 +60,13 @@ importers:
         specifier: ^2.20.0
         version: 2.21.0(webpack@5.88.2)
       npm-check-updates:
-        specifier: ^16.10.18
+        specifier: ^16.10.19
         version: 16.14.4
       npm-run-all:
         specifier: ^4.1.5
         version: 4.1.5
       prettier:
-        specifier: ^3.0.1
+        specifier: ^3.0.3
         version: 3.0.3
       react:
         specifier: ^18.2.0
@@ -78,7 +78,7 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0
       styled-components:
-        specifier: ^5.3.6
+        specifier: ^5.3.11
         version: 5.3.11(@babel/core@7.22.20)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
       typescript:
         specifier: ^4.9.5
@@ -97,8 +97,8 @@ importers:
         version: 10.7.0(react@18.2.0)(styled-components@5.3.11)
     devDependencies:
       '@literary-universe/svg-icons':
-        specifier: 0.6.3
-        version: 0.6.3
+        specifier: 0.6.4
+        version: 0.6.4
       '@styled-icons/pack-builder':
         specifier: workspace:^10.7.0
         version: link:../../tools/builder
@@ -180,7 +180,7 @@ importers:
         version: 1.2.4
       ts-node:
         specifier: ^10.9.1
-        version: 10.9.1(@types/node@18.17.18)(typescript@4.9.5)
+        version: 10.9.1(@types/node@18.18.1)(typescript@4.9.5)
       typescript:
         specifier: ^4.9.4
         version: 4.9.5
@@ -605,7 +605,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.9
-      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-plugin-utils': 7.22.5
       '@babel/plugin-syntax-object-rest-spread': 7.8.3(@babel/core@7.12.9)
       '@babel/plugin-transform-parameters': 7.22.15(@babel/core@7.12.9)
     dev: true
@@ -2251,8 +2251,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@literary-universe/svg-icons@0.6.3:
-    resolution: {integrity: sha512-1TtPZLQoAugzzBPimOmWpJg7x/jc5k/qxSvsSZH1EwKPvChGOS78HsIDbHJFsc1wJL0P8DoquaEehziS8fyzBA==}
+  /@literary-universe/svg-icons@0.6.4:
+    resolution: {integrity: sha512-6gZ6P2dbZVAgpuoIwb/ZJO0p+Xf5AC3z3kOs8gGtUlJcNutwgrNtJPyGV9RFzuoxQm48mZOWmmoEIcTKlvxL3w==}
     dev: true
 
   /@manypkg/find-root@1.1.0:
@@ -2338,17 +2338,6 @@ packages:
       '@monorepolint/utils': 0.5.0-alpha.108
       camelcase: 7.0.1
       chalk: 5.3.0
-      runtypes: 6.7.0
-      tslib: 2.6.2
-    dev: true
-
-  /@monorepolint/core@0.5.0-alpha.97:
-    resolution: {integrity: sha512-k7LVcNLL430kY1dHlABEd7oX1JBRCd9Z1JdavOireLdRAqq7sNevFgPT3dFb+Rjp655er8zfsCMniKN5RHMUew==}
-    dependencies:
-      '@monorepolint/rules': 0.5.0-alpha.108
-      '@monorepolint/utils': 0.5.0-alpha.108
-      camelcase: 6.3.0
-      chalk: 4.1.2
       runtypes: 6.7.0
       tslib: 2.6.2
     dev: true
@@ -4175,14 +4164,14 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 16.18.53
+      '@types/node': 18.18.1
     dev: true
 
   /@types/glob@8.1.0:
     resolution: {integrity: sha512-IO+MJPVhoqz+28h1qLAcBEH2+xHMK6MTyHJc7MTnnYb6wsoLR29POVGJ7LycmVXIqyy/4/2ShP5sUwTXuOwb/w==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 18.17.18
+      '@types/node': 18.18.1
     dev: true
 
   /@types/hast@2.3.6:
@@ -4194,7 +4183,7 @@ packages:
   /@types/hoist-non-react-statics@3.3.2:
     resolution: {integrity: sha512-YIQtIg4PKr7ZyqNPZObpxfHsHEmuB8dXCxd6qVcGuQVDK2bpsF7bYNnBJ4Nn7giuACZg+WewExgrtAJ3XnA4Xw==}
     dependencies:
-      '@types/react': 18.2.22
+      '@types/react': 18.2.24
       hoist-non-react-statics: 3.3.2
     dev: true
 
@@ -4249,7 +4238,7 @@ packages:
   /@types/node-fetch@2.6.5:
     resolution: {integrity: sha512-OZsUlr2nxvkqUFLSaY2ZbA+P1q22q+KrlxWOn/38RX+u5kTkYL2mTujEpzUhGkS+K/QCYp9oagfXG39XOzyySg==}
     dependencies:
-      '@types/node': 16.18.53
+      '@types/node': 18.18.1
       form-data: 4.0.0
     dev: true
 
@@ -4261,8 +4250,8 @@ packages:
     resolution: {integrity: sha512-vVmHeo4tpF8zsknALU90Hh24VueYdu45ZlXzYWFbom61YR4avJqTFDC3QlWzjuTdAv6/3xHaxiO9NrtVZXrkmw==}
     dev: true
 
-  /@types/node@18.17.18:
-    resolution: {integrity: sha512-/4QOuy3ZpV7Ya1GTRz5CYSz3DgkKpyUptXuQ5PPce7uuyJAOR7r9FhkmxJfvcNUXyklbC63a+YvB3jxy7s9ngw==}
+  /@types/node@18.18.1:
+    resolution: {integrity: sha512-3G42sxmm0fF2+Vtb9TJQpnjmP+uKlWvFa8KoEGquh4gqRmoUG/N0ufuhikw6HEsdG2G2oIKhog1GCTfz9v5NdQ==}
     dev: true
 
   /@types/normalize-package-data@2.4.1:
@@ -4293,8 +4282,8 @@ packages:
     resolution: {integrity: sha512-u95svzDlTysU5xecFNTgfFG5RUWu1A9P0VzgpcIiGZA9iraHOdSzcxMxQ55DyeRaGCSxQi7LxXDI4rzq/MYfdg==}
     dev: true
 
-  /@types/react@18.2.22:
-    resolution: {integrity: sha512-60fLTOLqzarLED2O3UQImc/lsNRgG0jE/a1mPW9KjMemY0LMITWEsbS4VvZ4p6rorEHd5YKxxmMKSDK505GHpA==}
+  /@types/react@18.2.24:
+    resolution: {integrity: sha512-Ee0Jt4sbJxMu1iDcetZEIKQr99J1Zfb6D4F3qfUWoR1JpInkY1Wdg4WwCyBjL257D0+jGqSl1twBjV8iCaC0Aw==}
     dependencies:
       '@types/prop-types': 15.7.6
       '@types/scheduler': 0.16.3
@@ -4313,11 +4302,11 @@ packages:
     resolution: {integrity: sha512-K5K+yml8LTo9bWJI/rECfIPrGgxdpeNbj+d53lwN4QjW1MCwlkhUms+gtdzigTeUyBr09+u8BwOIY3MXvHdcsA==}
     dev: true
 
-  /@types/styled-components@5.1.27:
-    resolution: {integrity: sha512-oY9c1SdztRRF0QDQdwXEenfAjGN4WGUkaMpx5hvdTbYYqw01qoY2GrHi+kAR6SVofynzD6KbGoF5ITP0zh5pvg==}
+  /@types/styled-components@5.1.28:
+    resolution: {integrity: sha512-nu0VKNybkjvUqJAXWtRqKd7j3iRUl8GbYSTvZNuIBJcw/HUp1Y4QUXNLlj7gcnRV/t784JnHAlvRnSnE3nPbJA==}
     dependencies:
       '@types/hoist-non-react-statics': 3.3.2
-      '@types/react': 18.2.22
+      '@types/react': 18.2.24
       csstype: 3.1.2
     dev: true
 
@@ -4342,7 +4331,7 @@ packages:
   /@types/webpack-sources@3.2.0:
     resolution: {integrity: sha512-Ft7YH3lEVRQ6ls8k4Ff1oB4jN6oy/XmU6tQISKdhfh+1mR+viZFphS6WL0IrtDOzvefmJg5a0s7ZQoRXwqTEFg==}
     dependencies:
-      '@types/node': 16.18.53
+      '@types/node': 18.18.1
       '@types/source-list-map': 0.1.2
       source-map: 0.7.4
     dev: true
@@ -4350,7 +4339,7 @@ packages:
   /@types/webpack@4.41.33:
     resolution: {integrity: sha512-PPajH64Ft2vWevkerISMtnZ8rTs4YmRbs+23c402J0INmxDKCrhZNvwZYtzx96gY2wAtXdrK1BS2fiC8MlLr3g==}
     dependencies:
-      '@types/node': 16.18.53
+      '@types/node': 18.18.1
       '@types/tapable': 1.0.9
       '@types/uglify-js': 3.17.2
       '@types/webpack-sources': 3.2.0
@@ -9007,7 +8996,7 @@ packages:
     resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 16.18.53
+      '@types/node': 18.18.1
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
@@ -9016,7 +9005,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 18.17.18
+      '@types/node': 18.18.1
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: true
@@ -12962,7 +12951,7 @@ packages:
     engines: {node: '>=6.10'}
     dev: true
 
-  /ts-node@10.9.1(@types/node@18.17.18)(typescript@4.9.5):
+  /ts-node@10.9.1(@types/node@18.18.1)(typescript@4.9.5):
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -12981,7 +12970,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 18.17.18
+      '@types/node': 18.18.1
       acorn: 8.10.0
       acorn-walk: 8.2.0
       arg: 4.1.3
