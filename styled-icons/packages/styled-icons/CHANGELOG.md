@@ -1,5 +1,11 @@
 # @literary-universe/icons
 
+## v0.6.3
+
+- Add missing credit cards icons
+- Add missing brand icons
+- Add few other icons
+
 ## v0.6.2
 
 - Fix line graph icon and add bar chart icon
