@@ -97,8 +97,8 @@ importers:
         version: 10.7.0(react@18.2.0)(styled-components@5.3.11)
     devDependencies:
       '@literary-universe/svg-icons':
-        specifier: 0.6.4
-        version: 0.6.4
+        specifier: 0.6.5
+        version: 0.6.5
       '@styled-icons/pack-builder':
         specifier: workspace:^10.7.0
         version: link:../../tools/builder
@@ -2251,8 +2251,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@literary-universe/svg-icons@0.6.4:
-    resolution: {integrity: sha512-6gZ6P2dbZVAgpuoIwb/ZJO0p+Xf5AC3z3kOs8gGtUlJcNutwgrNtJPyGV9RFzuoxQm48mZOWmmoEIcTKlvxL3w==}
+  /@literary-universe/svg-icons@0.6.5:
+    resolution: {integrity: sha512-+BYlAJJzA599KPtUyNnCKqK5+qrKguEOFi7zS21pB0jPe22ZujRm40ZkuK5fRwoMNdbhnatt4binLGoK+uWuOg==}
     dev: true
 
   /@manypkg/find-root@1.1.0:

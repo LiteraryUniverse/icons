@@ -1,5 +1,9 @@
 # Literary Universe SVG icons
 
+## v0.6.5
+
+- Fix XLogo icon
+
 ## v0.6.4
 
 - Add ApplePay
