@@ -1,5 +1,17 @@
 # Literary Universe SVG icons
 
+## v0.7.0
+
+- Added icons:
+  - Assignment
+  - AI assistant
+  - Family house
+  - Heading & headings 1 through 6
+  - History educational
+  - Numbered list
+  - Strikeout
+  - Subscript
+
 ## v0.6.5
 
 - Fix XLogo icon
