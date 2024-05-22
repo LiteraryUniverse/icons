@@ -36,7 +36,7 @@
     "styled-components": "*"
   },
   "devDependencies": {
-    "@literary-universe/svg-icons": "0.7.0",
+    "@literary-universe/svg-icons": "0.7.1",
     "@styled-icons/pack-builder": "workspace:^10.7.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

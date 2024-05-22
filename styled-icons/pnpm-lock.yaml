@@ -99,8 +99,8 @@ importers:
         version: 10.7.1(react@18.3.1)(styled-components@6.1.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
     devDependencies:
       '@literary-universe/svg-icons':
-        specifier: 0.7.0
-        version: 0.7.0
+        specifier: 0.7.1
+        version: 0.7.1
       '@styled-icons/pack-builder':
         specifier: workspace:^10.7.0
         version: link:../../tools/builder
@@ -1303,8 +1303,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.9':
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
 
-  '@literary-universe/svg-icons@0.7.0':
-    resolution: {integrity: sha512-1j8HiH0w34kE0167HqnmRBaMI5CgpYFnI+N756X+/9F3WFRZ9o2XAV52AV7vVbJqTkSrfmr/rqHqWK8c0lI7Cg==}
+  '@literary-universe/svg-icons@0.7.1':
+    resolution: {integrity: sha512-u3HqyFEqW8iYgcDj+Uu4XyndLsfi622OGSEsQaWOmZXqh7/GrCnB4HAmMpXVBIdbjzITGufG5xncyxRY+ES0yw==}
 
   '@manypkg/find-root@1.1.0':
     resolution: {integrity: sha512-mki5uBvhHzO8kYYix/WRy2WX8S3B5wdVSc9D6KcU5lQNglP2yt58/VfLuAK49glRXChosY8ap2oJ1qgma3GUVA==}
@@ -9204,7 +9204,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  '@literary-universe/svg-icons@0.7.0': {}
+  '@literary-universe/svg-icons@0.7.1': {}
 
   '@manypkg/find-root@1.1.0':
     dependencies:
