@@ -1,5 +1,9 @@
 # @literary-universe/icons
 
+## v0.7.1
+
+- Fixed release
+
 ## v0.7.0
 
 - New icons
