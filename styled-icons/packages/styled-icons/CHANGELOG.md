@@ -1,5 +1,9 @@
 # @literary-universe/icons
 
+## v0.7.0
+
+- New icons
+
 ## v0.6.5
 
 - Fix XLogo icon

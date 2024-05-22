@@ -1,5 +1,9 @@
 # Literary Universe SVG icons
 
+## v0.7.1
+
+- Fix DeviantArt icon
+
 ## v0.7.0
 
 - Added icons:
