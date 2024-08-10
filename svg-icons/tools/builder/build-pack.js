@@ -42,7 +42,7 @@ const generate = async () => {
 
   const iconFiles = uniqueIcons.map(async (icon) => {
     try {
-      const {data} = await svgo.optimize(icon.source, { multipass: true })
+      const {data} = await svgo.optimize(icon.source, {multipass: true})
       await fs.writeFile(`${icon.originalName}.svg`, data)
       const metadata = {name: icon.originalName, ...svgMetadata(data)}
       manifest.push(metadata)
@@ -50,7 +50,7 @@ const generate = async () => {
     } catch (e) {
       console.log(icon.originalName)
       console.error(e)
-     throw new Error(e)
+      throw new Error(e)
     }
   })
 

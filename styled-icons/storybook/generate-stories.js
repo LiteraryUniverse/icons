@@ -1,5 +1,5 @@
 const fs = require('fs-extra')
-const icons = require('styled-icons/manifest.json')
+const icons = require('@literary-universe/styled-icons/manifest.json')
 const path = require('path')
 
 async function run() {

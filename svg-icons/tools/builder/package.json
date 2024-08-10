@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@svg-icons/pack-builder",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "license": "MIT",
   "funding": {
     "type": "GitHub",
@@ -15,10 +15,10 @@
     "access": "public"
   },
   "devDependencies": {
-    "fs-extra": "^11.1.0",
+    "fs-extra": "^11.2.0",
     "svg-parser": "^2.0.4",
-    "svgo": "^3.0.2",
+    "svgo": "^3.3.2",
     "tiny-glob": "^0.2.9",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.5"
   }
 }
