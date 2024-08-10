@@ -11708,7 +11708,9 @@ snapshots:
       bn.js: 5.2.1
       randombytes: 2.1.0
 
-  browserify-sign@4.2.1:
+  /browserify-sign@4.2.2:
+    resolution: {integrity: sha512-1rudGyeYY42Dk6texmv7c4VcQ0EsvVbLwZkA+AQB7SxvXxmcD93jcHie8bzecJ+ChDlmAm2Qyu0+Ccg5uhZXCg==}
+    engines: {node: '>= 4'}
     dependencies:
       bn.js: 5.2.1
       browserify-rsa: 4.1.0
@@ -12228,7 +12230,7 @@ snapshots:
   crypto-browserify@3.12.0:
     dependencies:
       browserify-cipher: 1.0.1
-      browserify-sign: 4.2.1
+      browserify-sign: 4.2.2
       create-ecdh: 4.0.4
       create-hash: 1.2.0
       create-hmac: 1.1.7
