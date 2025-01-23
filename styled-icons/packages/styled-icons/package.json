@@ -28,7 +28,7 @@
     "generate": "generate-icon-package @literary-universe/svg-icons"
   },
   "dependencies": {
-    "@babel/runtime": "^7.24.5",
+    "@babel/runtime": "^7.26.0",
     "@styled-icons/styled-icon": "^10.7.1"
   },
   "peerDependencies": {
@@ -36,11 +36,11 @@
     "styled-components": "*"
   },
   "devDependencies": {
-    "@literary-universe/svg-icons": "0.7.1",
+    "@literary-universe/svg-icons": "0.7.2",
     "@styled-icons/pack-builder": "workspace:^10.7.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-is": "^18.3.1",
-    "styled-components": "^6.1.11"
+    "styled-components": "^6.1.14"
   }
 }
