@@ -17,7 +17,7 @@ async function run() {
     const stories = `
 import React from 'react'
 import {storiesOf} from '@storybook/react'
-import * as icons from 'styled-icons/${pack}'
+import * as icons from '@literary-universe/${pack}'
 
 storiesOf('${pack}')
   .add('icons', () => (
