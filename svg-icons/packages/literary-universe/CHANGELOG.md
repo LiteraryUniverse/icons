@@ -1,5 +1,25 @@
 # Literary Universe SVG icons
 
+## v0.8.0
+
+- Added icons:
+  - Ball
+  - Briefcase
+  - Building
+  - Car
+  - Continent
+  - Cooked Chicken
+  - Country
+  - Hamburger
+  - Health
+  - School
+  - Scroll
+  - Torch
+
+## v0.7.2
+
+- 
+
 ## v0.7.1
 
 - Fix DeviantArt icon
