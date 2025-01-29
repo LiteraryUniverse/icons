@@ -1,5 +1,21 @@
 # @literary-universe/icons
 
+## v0.8.0
+
+- Added icons:
+    - Ball
+    - Briefcase
+    - Building
+    - Car
+    - Continent
+    - Cooked Chicken
+    - Country
+    - Hamburger
+    - Health
+    - School
+    - Scroll
+    - Torch
+
 ## v0.7.1
 
 - Fixed release
