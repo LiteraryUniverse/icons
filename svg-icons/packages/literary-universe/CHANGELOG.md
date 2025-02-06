@@ -1,5 +1,15 @@
 # Literary Universe SVG icons
 
+## v0.8.1
+
+- Added icons:
+  - Pin
+  - Pinned
+  - Pomodoro
+  - Project Gutenberg
+  - Thumbs down
+  - Todo
+
 ## v0.8.0
 
 - Added icons:
