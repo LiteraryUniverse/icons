@@ -1,8 +1,6 @@
 module.exports = {
+  framework: '@storybook/html-webpack5',
   stories: ['../packages/**/*.stories.[tj]s'],
-  core: {
-    builder: 'webpack5',
-  },
 
   webpackFinal: async (config) => {
     config.module.rules = config.module.rules.map((rule) => {
@@ -18,7 +16,6 @@ module.exports = {
       use: 'raw-loader',
     })
 
-    console.log(config.module.rules)
     return config
   },
 }

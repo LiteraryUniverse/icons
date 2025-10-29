@@ -22,7 +22,7 @@ You use these packages as you would any [svg-icons](https://github.com/svg-icons
 All the icons should be designed by Literary Universe's design crew, following some conventions:
 
 - The view box must have the dimensions of 32x32 units;
-- Any horizontal assimetry must follow the left-to-right direction.
+- Any horizontal asymmetry must follow the left-to-right direction.
 - The icon must be published on Figma.
 
 As the icons might be arbitrarily scaled, the chosen source format for individual icon graphics is
