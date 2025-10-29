@@ -16,18 +16,20 @@ async function run() {
     const packIcons = packs[pack].sort()
     const stories = `
 import React from 'react'
-import {storiesOf} from '@storybook/react'
-import * as icons from '@literary-universe/${pack}'
+import * as iconComponents from '@literary-universe/${pack}'
 
-storiesOf('${pack}')
-  .add('icons', () => (
-    <>
-${packIcons.map((icon) => `      <div><icons.${icon} size="32" color="red" /></div>`).join('\n')}
-    </>
-  ))
+export default {
+  title: '${pack}',
+}
+
+export const icons = () => (
+  <>
+${packIcons.map((icon) => `    <div><iconComponents.${icon} size="32" color="red" /> ${icon}</div>`).join('\n')}
+  </>
+)
 
     `
-    await fs.writeFile(path.join(__dirname, 'stories', `${pack}.stories.js`), stories)
+    await fs.writeFile(path.join(__dirname, 'stories', `${pack}.stories.jsx`), stories)
   }
 }
 

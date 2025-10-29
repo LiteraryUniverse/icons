@@ -14,24 +14,23 @@
     "build-storybook": "build-storybook",
     "clean": "rm -rf stories",
     "generate": "node generate-stories.js",
-    "storybook": "start-storybook -p 6006"
+    "storybook": "storybook -p 6006"
   },
   "dependencies": {
     "@literary-universe/styled-icons": "link:../packages/styled-icons",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-is": "^18.3.1",
-    "styled-components": "^6.1.14",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-is": "^19.2.0",
+    "styled-components": "^6.1.19",
     "styled-icons": "^10.47.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.0",
-    "@storybook/addons": "^6.5.16",
-    "@storybook/react": "^6.5.16",
+    "@babel/core": "^7.28.5",
+    "@storybook/react": "^10.0.1",
     "babel-loader": "^9.2.1",
-    "chromatic": "^7.6.0",
-    "fs-extra": "^11.3.0",
+    "chromatic": "^9.1.0",
+    "fs-extra": "^11.3.2",
     "storybook-addon-turbo-build": "^1.1.0",
-    "webpack": "^5.97.1"
+    "webpack": "^5.102.1"
   }
 }

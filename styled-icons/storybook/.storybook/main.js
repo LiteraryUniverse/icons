@@ -1,4 +1,5 @@
-module.exports = {
+export default {
+  framework: '@storybook/react-vite',
   addons: [
     {
       name: 'storybook-addon-turbo-build',
@@ -7,8 +8,14 @@ module.exports = {
       },
     },
   ],
-  stories: ['../stories/**/*.stories.js'],
-  core: {
-    builder: 'webpack5',
+  stories: ['../stories/**/*.stories.{js,jsx}'],
+
+  async viteFinal(config) {
+    config.esbuild = {
+      ...config.esbuild,
+      loader: 'jsx',
+      include: /\.(js|jsx|ts|tsx)$/,
+    }
+    return config
   },
 }

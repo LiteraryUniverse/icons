@@ -1,5 +1,15 @@
 # @literary-universe/icons
 
+## v0.9.0
+- Upgraded dev tools and systems
+- Added icons:
+  - Add Circle
+  - Font Family
+  - Font Size
+  - Image
+  - Landmark Monument
+  - Landmark Tower
+
 ## v0.8.1
 
 - Added icons:
