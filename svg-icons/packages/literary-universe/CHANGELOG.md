@@ -1,5 +1,45 @@
 # Literary Universe SVG icons
 
+## v0.10.0
+
+- Added icons:
+  - Campfire
+  - Capital
+  - Castle
+  - Compass
+  - Compass Fancy
+  - Compressed File
+  - Dungeon
+  - Forest
+  - File Epub
+  - File MP3
+  - File PDF
+  - File WAV
+  - Harbor
+  - Minecart
+  - Mountain
+  - Potion
+  - Printer
+  - Rocket
+  - Ship Sailing Front
+  - Ship Sails
+  - Sport
+  - Swamp
+  - Temple
+  - Town
+  - Village
+  - Waziard hat
+
+## v0.9.0
+
+- Added icons:
+  - Add Circle
+  - Font Family
+  - Font Size
+  - Image
+  - Landmark Monument
+  - Landmark Tower
+
 ## v0.8.1
 
 - Added icons:
