@@ -1,5 +1,9 @@
 # @literary-universe/icons
 
+## v0.10.4
+
+- Removed Public icon due to conflicts, use PublicPublication icon instead
+
 ## v0.10.0
 - Added icons:
   - Campfire

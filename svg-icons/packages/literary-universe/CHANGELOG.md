@@ -1,5 +1,9 @@
 # Literary Universe SVG icons
 
+## v0.11.0
+
+- Remove public icon due to conflicts down the line, replace it with PublicPublication
+
 ## v0.10.0
 
 - Updated Storybook to v10 and made it look better
