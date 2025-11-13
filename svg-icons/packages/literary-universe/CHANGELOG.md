@@ -2,6 +2,7 @@
 
 ## v0.10.0
 
+- Updated Storybook to v10 and made it look better
 - Added icons:
   - Campfire
   - Capital
@@ -28,7 +29,7 @@
   - Temple
   - Town
   - Village
-  - Waziard hat
+  - Wizard hat
 
 ## v0.9.0
 

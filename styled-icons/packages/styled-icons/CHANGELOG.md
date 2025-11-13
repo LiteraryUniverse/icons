@@ -1,5 +1,34 @@
 # @literary-universe/icons
 
+## v0.10.0
+- Added icons:
+  - Campfire
+  - Capital
+  - Castle
+  - Compass
+  - Compass Fancy
+  - Compressed File
+  - Dungeon
+  - Forest
+  - File Epub
+  - File MP3
+  - File PDF
+  - File WAV
+  - Harbor
+  - Minecart
+  - Mountain
+  - Potion
+  - Printer
+  - Rocket
+  - Ship Sailing Front
+  - Ship Sails
+  - Sport
+  - Swamp
+  - Temple
+  - Town
+  - Village
+  - Wizard hat
+
 ## v0.9.0
 - Upgraded dev tools and systems
 - Added icons:

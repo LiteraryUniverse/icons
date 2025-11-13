@@ -33,7 +33,7 @@ importers:
         version: 0.5.1(encoding@0.1.13)
       '@changesets/cli':
         specifier: ^2.29.7
-        version: 2.29.7(@types/node@20.19.24)
+        version: 2.29.7(@types/node@20.19.25)
       '@monorepolint/cli':
         specifier: ^0.5.0
         version: 0.5.0
@@ -41,14 +41,14 @@ importers:
         specifier: 0.5.0
         version: 0.5.0
       '@storybook/react-vite':
-        specifier: ^10.0.1
-        version: 10.0.1(esbuild@0.25.11)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(rollup@4.52.5)(storybook@10.0.1(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0)))(typescript@5.9.3)(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0))(webpack@5.102.1(esbuild@0.25.11))
+        specifier: ^10.0.7
+        version: 10.0.7(esbuild@0.25.11)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(rollup@4.52.5)(storybook@10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0)))(typescript@5.9.3)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0))(webpack@5.102.1(esbuild@0.25.11))
       '@types/node':
-        specifier: ^20.19.24
-        version: 20.19.24
+        specifier: ^20.19.25
+        version: 20.19.25
       '@types/react':
-        specifier: ^19.2.2
-        version: 19.2.2
+        specifier: ^19.2.4
+        version: 19.2.4
       '@types/styled-components':
         specifier: ^5.1.35
         version: 5.1.35
@@ -59,7 +59,7 @@ importers:
         specifier: ^3.2.0
         version: 3.2.0(webpack@5.102.1(esbuild@0.25.11))
       npm-check-updates:
-        specifier: ^17.0.0
+        specifier: ^17.0.6
         version: 17.1.18
       npm-run-all:
         specifier: ^4.1.5
@@ -77,8 +77,8 @@ importers:
         specifier: ^19.2.0
         version: 19.2.0
       storybook:
-        specifier: ^10.0.1
-        version: 10.0.1(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0))
+        specifier: ^10.0.7
+        version: 10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0))
       styled-components:
         specifier: ^6.1.19
         version: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
@@ -97,13 +97,34 @@ importers:
       '@styled-icons/styled-icon':
         specifier: ^10.7.1
         version: 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react:
+        specifier: ^18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.3.1
+        version: 18.3.1(react@18.3.1)
+      react-is:
+        specifier: ^18.3.1
+        version: 18.3.1
     devDependencies:
       '@literary-universe/svg-icons':
-        specifier: 0.9.0
-        version: 0.9.0
+        specifier: 0.10.0
+        version: 0.10.0
       '@styled-icons/pack-builder':
         specifier: workspace:^10.7.0
         version: link:../../tools/builder
+      styled-components:
+        specifier: ^6.1.19
+        version: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+
+  storybook:
+    dependencies:
+      '@literary-universe/styled-icons':
+        specifier: link:../packages/styled-icons
+        version: link:../packages/styled-icons
+      '@styled-icons/styled-icon':
+        specifier: ^10.7.1
+        version: 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -116,34 +137,16 @@ importers:
       styled-components:
         specifier: ^6.1.19
         version: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-
-  storybook:
-    dependencies:
-      '@literary-universe/styled-icons':
-        specifier: link:../packages/styled-icons
-        version: link:../packages/styled-icons
-      react:
-        specifier: ^19.2.0
-        version: 19.2.0
-      react-dom:
-        specifier: ^19.2.0
-        version: 19.2.0(react@19.2.0)
-      react-is:
-        specifier: ^19.2.0
-        version: 19.2.0
-      styled-components:
-        specifier: ^6.1.19
-        version: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       styled-icons:
         specifier: ^10.47.1
-        version: 10.47.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
+        version: 10.47.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
     devDependencies:
       '@babel/core':
         specifier: ^7.28.5
         version: 7.28.5
       '@storybook/react':
-        specifier: ^10.0.1
-        version: 10.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(storybook@10.0.1(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0)))(typescript@5.9.3)
+        specifier: ^10.0.7
+        version: 10.0.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0)))(typescript@5.9.3)
       babel-loader:
         specifier: ^9.2.1
         version: 9.2.1(@babel/core@7.28.5)(webpack@5.102.1(esbuild@0.25.11))
@@ -182,7 +185,7 @@ importers:
         version: 1.2.4
       ts-node:
         specifier: ^10.9.2
-        version: 10.9.2(@types/node@20.19.24)(typescript@4.9.5)
+        version: 10.9.2(@types/node@20.19.25)(typescript@4.9.5)
       typescript:
         specifier: ^4.9.4
         version: 4.9.5
@@ -1384,8 +1387,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.9':
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
 
-  '@literary-universe/svg-icons@0.9.0':
-    resolution: {integrity: sha512-zeCjMm7klM5p+g0ICZlCfDe3IdB8SgtqSMl8qr9WqQIXNYpS39kBD+UYUjbXfQDLsHXgg1QNc5oHq9hmu4qXow==}
+  '@literary-universe/svg-icons@0.10.0':
+    resolution: {integrity: sha512-ZuyjhTZVZY8WePiX26nU9JtUy2FRS4RSsdiSuj8dOclbX4jxkCB6KbIk2qrNFWFiad7Tomb4yrccbrXarFTNNQ==}
 
   '@manypkg/find-root@1.1.0':
     resolution: {integrity: sha512-mki5uBvhHzO8kYYix/WRy2WX8S3B5wdVSc9D6KcU5lQNglP2yt58/VfLuAK49glRXChosY8ap2oJ1qgma3GUVA==}
@@ -1587,18 +1590,18 @@ packages:
   '@sinclair/typebox@0.27.8':
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
 
-  '@storybook/builder-vite@10.0.1':
-    resolution: {integrity: sha512-mZCPpLMZ4w0HIpPiPs70nPWW6O6CdOmM3+9PaFy4r0PH2oW2s6jbLmXVSzgxIx2eMWndzOXPjqFWmzw6kp/0UA==}
+  '@storybook/builder-vite@10.0.7':
+    resolution: {integrity: sha512-wk2TAoUY5+9t78GWVBndu9rEo9lo6Ec3SRrLT4VpIlcS2GPK+5f26UC2uvIBwOF/N7JrUUKq/zWDZ3m+do9QDg==}
     peerDependencies:
-      storybook: ^10.0.1
+      storybook: ^10.0.7
       vite: ^5.0.0 || ^6.0.0 || ^7.0.0
 
-  '@storybook/csf-plugin@10.0.1':
-    resolution: {integrity: sha512-THd6faQGGyT19G+lu5lbegGGTaTjs+kaUi2nX11yrwjTSnL1HL5AAfmJSsGJ6wK0rzK/Nv7ray46z3lUq3BYRw==}
+  '@storybook/csf-plugin@10.0.7':
+    resolution: {integrity: sha512-YaYYlCyJBwxaMk7yREOdz+9MDSgxIYGdeJ9EIq/bUndmkoj9SRo1P9/0lC5dseWQoiGy4T3PbZiWruD8uM5m3g==}
     peerDependencies:
       esbuild: '*'
       rollup: '*'
-      storybook: ^10.0.1
+      storybook: ^10.0.7
       vite: '*'
       webpack: '*'
     peerDependenciesMeta:
@@ -1621,27 +1624,27 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
 
-  '@storybook/react-dom-shim@10.0.1':
-    resolution: {integrity: sha512-fK6SLWKK0wsnBVRAjWwf+T7cMHXdgQ34Xk18QeAAXWJyT8UAb7x1QwdepOWBG2Gs2hVjJjD5ky/sRzK1L3kA9A==}
+  '@storybook/react-dom-shim@10.0.7':
+    resolution: {integrity: sha512-bp4OnMtZGwPJQDqNRi4K5iibLbZ2TZZMkWW7oSw5jjPFpGSreSjCe8LH9yj/lDnK8Ox9bGMCBFE5RV5XuML29w==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-      storybook: ^10.0.1
+      storybook: ^10.0.7
 
-  '@storybook/react-vite@10.0.1':
-    resolution: {integrity: sha512-/bzGhOrG6Nmj31Qze9bULE4N7ynHsOHQYVC5WdJyh12SP++659y3LEFw1+aIFhJAN6LnwpW7rLknLIfyIEjWrA==}
+  '@storybook/react-vite@10.0.7':
+    resolution: {integrity: sha512-EAv2cwYkRctQNcPC1jLsZPm+C6RVk6t6axKrkc/+cFe/t5MnKG7oRf0c/6apWYi/cQv6kzNsFxMV2jj8r/VoBg==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-      storybook: ^10.0.1
+      storybook: ^10.0.7
       vite: ^5.0.0 || ^6.0.0 || ^7.0.0
 
-  '@storybook/react@10.0.1':
-    resolution: {integrity: sha512-MtQ4G8q2wTe2E9zeuyAP/pZgwZEI+ijHZo8spndLdNF1gj+ihsdJguDS+ZAbfZSMNz0s2zroX4t+SKDSBbqBdg==}
+  '@storybook/react@10.0.7':
+    resolution: {integrity: sha512-1GSDIMo2GkdG55DhpIIFaAJv+QzmsRb36qWsKqfbtFjEhnqu5/3zqyys2dCIiHOG1Czba4SGsTS4cay3KDQJgA==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-      storybook: ^10.0.1
+      storybook: ^10.0.7
       typescript: '>= 4.9.x'
     peerDependenciesMeta:
       typescript:
@@ -1947,11 +1950,11 @@ packages:
   '@types/node@12.20.55':
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
 
-  '@types/node@20.19.24':
-    resolution: {integrity: sha512-FE5u0ezmi6y9OZEzlJfg37mqqf6ZDSF2V/NLjUyGrR9uTZ7Sb9F7bLNZ03S4XVUNRWGA7Ck4c1kK+YnuWjl+DA==}
+  '@types/node@20.19.25':
+    resolution: {integrity: sha512-ZsJzA5thDQMSQO788d7IocwwQbI8B5OPzmqNvpf3NY/+MHDAS759Wo0gd2WQeXYt5AAAQjzcrTVC6SKCuYgoCQ==}
 
-  '@types/react@19.2.2':
-    resolution: {integrity: sha512-6mDvHUFSjyT2B2yeNx2nUgMxh9LtOWvkhIU3uePn2I2oyNymUAX1NIsdgviM4CH+JSrp2D2hsMvJOkxY+0wNRA==}
+  '@types/react@19.2.4':
+    resolution: {integrity: sha512-tBFxBp9Nfyy5rsmefN+WXc1JeW/j2BpBHFdLZbEVfs9wn3E3NRFxwV0pJg8M1qQAexFpvz73hJXFofV0ZAu92A==}
 
   '@types/resolve@1.20.6':
     resolution: {integrity: sha512-A4STmOXPhMUtHH+S6ymgE2GiBSMqf4oTvcQZMcHzokuTLVYzXTB8ttjcgxOVaAp2lGwEdzZ0J+cRbbeevQj1UQ==}
@@ -2038,6 +2041,7 @@ packages:
 
   abab@2.0.6:
     resolution: {integrity: sha512-j2afSsaIENvHZN2B8GOpF566vZ5WVk5opAiMTvWgaQT8DkbOqsTfvNAvHoRGU2zzP8cPoqys+xHTRDWW8L+/BA==}
+    deprecated: Use your platform's native atob() and btoa() methods instead
 
   acorn-import-phases@1.0.4:
     resolution: {integrity: sha512-wKmbr/DDiIXzEOiWrTTUcDm24kQ2vGfZQvM2fwg2vXqR5uW6aapr7ObPtj1th32b9u90/Pf4AItvdTh42fBmVQ==}
@@ -2425,6 +2429,7 @@ packages:
   domexception@4.0.0:
     resolution: {integrity: sha512-A2is4PLG+eeSfoTMA95/s4pvAoSo2mKtiM5jlHkAVewmiO8ISFTFKZjH7UAM1Atli/OT/7JHOrJRJiMKUZKYBw==}
     engines: {node: '>=12'}
+    deprecated: Use your platform's native DOMException instead
 
   dotenv@8.6.0:
     resolution: {integrity: sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==}
@@ -2693,6 +2698,7 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   globalthis@1.0.3:
     resolution: {integrity: sha512-sFdI5LyBiNTHjRd7cGPWapiHWMOXKyuBNX/cWJ3NfzrZQVa8GI/8cofCl74AOVqq9W5kNmguTIzJ/1s2gyI9wA==}
@@ -2808,6 +2814,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -2836,9 +2843,6 @@ packages:
   is-callable@1.2.7:
     resolution: {integrity: sha512-1BC0BVFhS/p0qtw6enp8e+8OD0UrK0oFLztSjNzhcKA3WDuJxxAPXzPuPtKkjEY9UUoEWlX/8fgKeu2S8i9JTA==}
     engines: {node: '>= 0.4'}
-
-  is-core-module@2.13.0:
-    resolution: {integrity: sha512-Z7dk6Qo8pOCp3l4tsX2C5ZVas4V+UxwQodwZhLopL91TX8UyyHEXafPcyoeeWuLrwzHcr3igO78wNLwHJHsMCQ==}
 
   is-core-module@2.16.1:
     resolution: {integrity: sha512-UfoeMA6fIJ8wTYFEUjelnaGI67v6+N7qXJEvQuIGa99l4xsCruSYOVSQ0uPANn4dAzm8lkYPaKLrrijLq7x23w==}
@@ -3468,10 +3472,6 @@ packages:
     engines: {node: '>= 0.4'}
     hasBin: true
 
-  resolve@1.22.6:
-    resolution: {integrity: sha512-njhxM7mV12JfufShqGy3Rz8j11RPdLy4xi15UurGJeoHLfJpVXKdh3ueuOqbYUcDZnffr6X739JBo5LzyahEsw==}
-    hasBin: true
-
   reusify@1.0.4:
     resolution: {integrity: sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
@@ -3629,8 +3629,8 @@ packages:
   storybook-addon-turbo-build@1.1.0:
     resolution: {integrity: sha512-5Zj74c5vQYAVE7m8DOKv3OuOHMn29ljWj34UUYXpIoYQ786ORXu9MAj4WnqLstQvMy6cDqchUm4pROKVgef5ZA==}
 
-  storybook@10.0.1:
-    resolution: {integrity: sha512-WQMfNsbyHO8fx5bLatsLATzvFwzG42xHnq8W9s2HzjhGzQ2Pp77k7nRWXMuRNvvv+4ypKhJdqeDl8S9kwWuz2A==}
+  storybook@10.0.7:
+    resolution: {integrity: sha512-7smAu0o+kdm378Q2uIddk32pn0UdIbrtTVU+rXRVtTVTCrK/P2cCui2y4JH+Bl3NgEq1bbBQpCAF/HKrDjk2Qw==}
     hasBin: true
     peerDependencies:
       prettier: ^2 || ^3
@@ -4950,7 +4950,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@changesets/cli@2.29.7(@types/node@20.19.24)':
+  '@changesets/cli@2.29.7(@types/node@20.19.25)':
     dependencies:
       '@changesets/apply-release-plan': 7.0.13
       '@changesets/assemble-release-plan': 6.0.9
@@ -4966,7 +4966,7 @@ snapshots:
       '@changesets/should-skip-package': 0.1.2
       '@changesets/types': 6.1.0
       '@changesets/write': 0.4.0
-      '@inquirer/external-editor': 1.0.2(@types/node@20.19.24)
+      '@inquirer/external-editor': 1.0.2(@types/node@20.19.25)
       '@manypkg/get-packages': 1.1.3
       ansi-colors: 4.1.3
       ci-info: 3.8.0
@@ -5299,12 +5299,12 @@ snapshots:
 
   '@gwhitney/detect-indent@7.0.1': {}
 
-  '@inquirer/external-editor@1.0.2(@types/node@20.19.24)':
+  '@inquirer/external-editor@1.0.2(@types/node@20.19.25)':
     dependencies:
       chardet: 2.1.0
       iconv-lite: 0.7.0
     optionalDependencies:
-      '@types/node': 20.19.24
+      '@types/node': 20.19.25
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -5319,12 +5319,12 @@ snapshots:
     dependencies:
       '@sinclair/typebox': 0.27.8
 
-  '@joshwooding/vite-plugin-react-docgen-typescript@0.6.1(typescript@5.9.3)(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0))':
+  '@joshwooding/vite-plugin-react-docgen-typescript@0.6.1(typescript@5.9.3)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0))':
     dependencies:
       glob: 10.4.5
       magic-string: 0.30.21
       react-docgen-typescript: 2.2.2(typescript@5.9.3)
-      vite: 7.1.12(@types/node@20.19.24)(terser@5.44.0)
+      vite: 7.1.12(@types/node@20.19.25)(terser@5.44.0)
     optionalDependencies:
       typescript: 5.9.3
 
@@ -5372,7 +5372,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  '@literary-universe/svg-icons@0.9.0': {}
+  '@literary-universe/svg-icons@0.10.0': {}
 
   '@manypkg/find-root@1.1.0':
     dependencies:
@@ -5570,55 +5570,66 @@ snapshots:
 
   '@sinclair/typebox@0.27.8': {}
 
-  '@storybook/builder-vite@10.0.1(esbuild@0.25.11)(rollup@4.52.5)(storybook@10.0.1(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0)))(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0))(webpack@5.102.1(esbuild@0.25.11))':
+  '@storybook/builder-vite@10.0.7(esbuild@0.25.11)(rollup@4.52.5)(storybook@10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0)))(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0))(webpack@5.102.1(esbuild@0.25.11))':
     dependencies:
-      '@storybook/csf-plugin': 10.0.1(esbuild@0.25.11)(rollup@4.52.5)(storybook@10.0.1(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0)))(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0))(webpack@5.102.1(esbuild@0.25.11))
-      storybook: 10.0.1(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0))
+      '@storybook/csf-plugin': 10.0.7(esbuild@0.25.11)(rollup@4.52.5)(storybook@10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0)))(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0))(webpack@5.102.1(esbuild@0.25.11))
+      storybook: 10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0))
       ts-dedent: 2.2.0
-      vite: 7.1.12(@types/node@20.19.24)(terser@5.44.0)
+      vite: 7.1.12(@types/node@20.19.25)(terser@5.44.0)
     transitivePeerDependencies:
       - esbuild
       - rollup
       - webpack
 
-  '@storybook/csf-plugin@10.0.1(esbuild@0.25.11)(rollup@4.52.5)(storybook@10.0.1(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0)))(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0))(webpack@5.102.1(esbuild@0.25.11))':
+  '@storybook/csf-plugin@10.0.7(esbuild@0.25.11)(rollup@4.52.5)(storybook@10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0)))(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0))(webpack@5.102.1(esbuild@0.25.11))':
     dependencies:
-      storybook: 10.0.1(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0))
+      storybook: 10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0))
       unplugin: 2.3.10
     optionalDependencies:
       esbuild: 0.25.11
       rollup: 4.52.5
-      vite: 7.1.12(@types/node@20.19.24)(terser@5.44.0)
+      vite: 7.1.12(@types/node@20.19.25)(terser@5.44.0)
       webpack: 5.102.1(esbuild@0.25.11)
 
   '@storybook/global@5.0.0': {}
+
+  '@storybook/icons@1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   '@storybook/icons@1.6.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@storybook/react-dom-shim@10.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(storybook@10.0.1(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0)))':
+  '@storybook/react-dom-shim@10.0.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0)))':
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      storybook: 10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0))
+
+  '@storybook/react-dom-shim@10.0.7(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(storybook@10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0)))':
     dependencies:
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
-      storybook: 10.0.1(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0))
+      storybook: 10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0))
 
-  '@storybook/react-vite@10.0.1(esbuild@0.25.11)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(rollup@4.52.5)(storybook@10.0.1(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0)))(typescript@5.9.3)(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0))(webpack@5.102.1(esbuild@0.25.11))':
+  '@storybook/react-vite@10.0.7(esbuild@0.25.11)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(rollup@4.52.5)(storybook@10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0)))(typescript@5.9.3)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0))(webpack@5.102.1(esbuild@0.25.11))':
     dependencies:
-      '@joshwooding/vite-plugin-react-docgen-typescript': 0.6.1(typescript@5.9.3)(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0))
+      '@joshwooding/vite-plugin-react-docgen-typescript': 0.6.1(typescript@5.9.3)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0))
       '@rollup/pluginutils': 5.3.0(rollup@4.52.5)
-      '@storybook/builder-vite': 10.0.1(esbuild@0.25.11)(rollup@4.52.5)(storybook@10.0.1(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0)))(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0))(webpack@5.102.1(esbuild@0.25.11))
-      '@storybook/react': 10.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(storybook@10.0.1(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0)))(typescript@5.9.3)
+      '@storybook/builder-vite': 10.0.7(esbuild@0.25.11)(rollup@4.52.5)(storybook@10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0)))(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0))(webpack@5.102.1(esbuild@0.25.11))
+      '@storybook/react': 10.0.7(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(storybook@10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0)))(typescript@5.9.3)
       empathic: 2.0.0
       magic-string: 0.30.21
       react: 19.2.0
       react-docgen: 8.0.2
       react-dom: 19.2.0(react@19.2.0)
       resolve: 1.22.11
-      storybook: 10.0.1(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0))
+      storybook: 10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0))
       tsconfig-paths: 4.2.0
-      vite: 7.1.12(@types/node@20.19.24)(terser@5.44.0)
+      vite: 7.1.12(@types/node@20.19.25)(terser@5.44.0)
     transitivePeerDependencies:
       - esbuild
       - rollup
@@ -5626,253 +5637,263 @@ snapshots:
       - typescript
       - webpack
 
-  '@storybook/react@10.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(storybook@10.0.1(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0)))(typescript@5.9.3)':
+  '@storybook/react@10.0.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0)))(typescript@5.9.3)':
     dependencies:
       '@storybook/global': 5.0.0
-      '@storybook/react-dom-shim': 10.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(storybook@10.0.1(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0)))
-      react: 19.2.0
-      react-dom: 19.2.0(react@19.2.0)
-      storybook: 10.0.1(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0))
+      '@storybook/react-dom-shim': 10.0.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0)))
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      storybook: 10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0))
     optionalDependencies:
       typescript: 5.9.3
 
-  '@styled-icons/bootstrap@10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@storybook/react@10.0.7(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(storybook@10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0)))(typescript@5.9.3)':
     dependencies:
-      '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
+      '@storybook/global': 5.0.0
+      '@storybook/react-dom-shim': 10.0.7(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(storybook@10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0)))
       react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      react-dom: 19.2.0(react@19.2.0)
+      storybook: 10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0))
+    optionalDependencies:
+      typescript: 5.9.3
 
-  '@styled-icons/boxicons-logos@10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/bootstrap@10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/boxicons-regular@10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/boxicons-logos@10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/boxicons-solid@10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/boxicons-regular@10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/crypto@10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/boxicons-solid@10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/entypo-social@10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/crypto@10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/entypo@10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/entypo-social@10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/evaicons-outline@10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/entypo@10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/evaicons-solid@10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/evaicons-outline@10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/evil@10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/evaicons-solid@10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/fa-brands@10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/evil@10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/fa-regular@10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/fa-brands@10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/fa-solid@10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/fa-regular@10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/feather@10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/fa-solid@10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/fluentui-system-filled@10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/feather@10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/fluentui-system-regular@10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/fluentui-system-filled@10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/foundation@10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/fluentui-system-regular@10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/heroicons-outline@10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/foundation@10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/heroicons-solid@10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/heroicons-outline@10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/icomoon@10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/heroicons-solid@10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/ionicons-outline@10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/icomoon@10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/ionicons-sharp@10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/ionicons-outline@10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/ionicons-solid@10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/ionicons-sharp@10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/material-outlined@10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/ionicons-solid@10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/material-rounded@10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/material-outlined@10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/material-sharp@10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/material-rounded@10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/material-twotone@10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/material-sharp@10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/material@10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/material-twotone@10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/octicons@10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/material@10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/open-iconic@10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/octicons@10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/remix-editor@10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/open-iconic@10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/remix-fill@10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/remix-editor@10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/remix-line@10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/remix-fill@10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/simple-icons@10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/remix-line@10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+
+  '@styled-icons/simple-icons@10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
   '@styled-icons/styled-icon@10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
@@ -5880,25 +5901,19 @@ snapshots:
       react: 18.3.1
       styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/styled-icon@10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/typicons@10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@styled-icons/typicons@10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
+  '@styled-icons/zondicons@10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-
-  '@styled-icons/zondicons@10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
-    dependencies:
-      '@babel/runtime': 7.28.4
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
   '@testing-library/dom@10.4.0':
     dependencies:
@@ -5982,7 +5997,7 @@ snapshots:
 
   '@types/hoist-non-react-statics@3.3.2':
     dependencies:
-      '@types/react': 19.2.2
+      '@types/react': 19.2.4
       hoist-non-react-statics: 3.3.2
 
   '@types/json-schema@7.0.13': {}
@@ -5991,11 +6006,11 @@ snapshots:
 
   '@types/node@12.20.55': {}
 
-  '@types/node@20.19.24':
+  '@types/node@20.19.25':
     dependencies:
       undici-types: 6.21.0
 
-  '@types/react@19.2.2':
+  '@types/react@19.2.4':
     dependencies:
       csstype: 3.1.3
 
@@ -6004,7 +6019,7 @@ snapshots:
   '@types/styled-components@5.1.35':
     dependencies:
       '@types/hoist-non-react-statics': 3.3.2
-      '@types/react': 19.2.2
+      '@types/react': 19.2.4
       csstype: 3.1.3
 
   '@types/stylis@4.2.5': {}
@@ -6017,13 +6032,13 @@ snapshots:
       chai: 5.3.3
       tinyrainbow: 2.0.0
 
-  '@vitest/mocker@3.2.4(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0))':
+  '@vitest/mocker@3.2.4(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0))':
     dependencies:
       '@vitest/spy': 3.2.4
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 7.1.12(@types/node@20.19.24)(terser@5.44.0)
+      vite: 7.1.12(@types/node@20.19.25)(terser@5.44.0)
 
   '@vitest/pretty-format@3.2.4':
     dependencies:
@@ -7044,10 +7059,6 @@ snapshots:
 
   is-callable@1.2.7: {}
 
-  is-core-module@2.13.0:
-    dependencies:
-      has: 1.0.3
-
   is-core-module@2.16.1:
     dependencies:
       hasown: 2.0.2
@@ -7130,7 +7141,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 20.19.24
+      '@types/node': 20.19.25
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
@@ -7322,7 +7333,7 @@ snapshots:
   normalize-package-data@2.5.0:
     dependencies:
       hosted-git-info: 2.8.9
-      resolve: 1.22.6
+      resolve: 1.22.11
       semver: 5.7.2
       validate-npm-package-license: 3.0.4
 
@@ -7643,12 +7654,6 @@ snapshots:
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
 
-  resolve@1.22.6:
-    dependencies:
-      is-core-module: 2.13.0
-      path-parse: 1.0.7
-      supports-preserve-symlinks-flag: 1.0.0
-
   reusify@1.0.4: {}
 
   rollup@4.52.5:
@@ -7822,14 +7827,38 @@ snapshots:
     transitivePeerDependencies:
       - webpack
 
-  storybook@10.0.1(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0)):
+  storybook@10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0)):
+    dependencies:
+      '@storybook/global': 5.0.0
+      '@storybook/icons': 1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@testing-library/jest-dom': 6.9.1
+      '@testing-library/user-event': 14.6.1(@testing-library/dom@10.4.0)
+      '@vitest/expect': 3.2.4
+      '@vitest/mocker': 3.2.4(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0))
+      '@vitest/spy': 3.2.4
+      esbuild: 0.25.11
+      recast: 0.23.11
+      semver: 7.7.3
+      ws: 8.18.3
+    optionalDependencies:
+      prettier: 3.6.2
+    transitivePeerDependencies:
+      - '@testing-library/dom'
+      - bufferutil
+      - msw
+      - react
+      - react-dom
+      - utf-8-validate
+      - vite
+
+  storybook@10.0.7(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0)):
     dependencies:
       '@storybook/global': 5.0.0
       '@storybook/icons': 1.6.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@testing-library/jest-dom': 6.9.1
       '@testing-library/user-event': 14.6.1(@testing-library/dom@10.4.0)
       '@vitest/expect': 3.2.4
-      '@vitest/mocker': 3.2.4(vite@7.1.12(@types/node@20.19.24)(terser@5.44.0))
+      '@vitest/mocker': 3.2.4(vite@7.1.12(@types/node@20.19.25)(terser@5.44.0))
       '@vitest/spy': 3.2.4
       esbuild: 0.25.11
       recast: 0.23.11
@@ -7930,48 +7959,48 @@ snapshots:
       stylis: 4.3.2
       tslib: 2.6.2
 
-  styled-icons@10.47.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)):
+  styled-icons@10.47.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
     dependencies:
       '@babel/runtime': 7.28.4
-      '@styled-icons/bootstrap': 10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/boxicons-logos': 10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/boxicons-regular': 10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/boxicons-solid': 10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/crypto': 10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/entypo': 10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/entypo-social': 10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/evaicons-outline': 10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/evaicons-solid': 10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/evil': 10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/fa-brands': 10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/fa-regular': 10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/fa-solid': 10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/feather': 10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/fluentui-system-filled': 10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/fluentui-system-regular': 10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/foundation': 10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/heroicons-outline': 10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/heroicons-solid': 10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/icomoon': 10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/ionicons-outline': 10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/ionicons-sharp': 10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/ionicons-solid': 10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/material': 10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/material-outlined': 10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/material-rounded': 10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/material-sharp': 10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/material-twotone': 10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/octicons': 10.47.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/open-iconic': 10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/remix-editor': 10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/remix-fill': 10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/remix-line': 10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/simple-icons': 10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/styled-icon': 10.7.1(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/typicons': 10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      '@styled-icons/zondicons': 10.46.0(react@19.2.0)(styled-components@6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
-      react: 19.2.0
-      styled-components: 6.1.19(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@styled-icons/bootstrap': 10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/boxicons-logos': 10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/boxicons-regular': 10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/boxicons-solid': 10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/crypto': 10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/entypo': 10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/entypo-social': 10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/evaicons-outline': 10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/evaicons-solid': 10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/evil': 10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/fa-brands': 10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/fa-regular': 10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/fa-solid': 10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/feather': 10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/fluentui-system-filled': 10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/fluentui-system-regular': 10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/foundation': 10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/heroicons-outline': 10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/heroicons-solid': 10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/icomoon': 10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/ionicons-outline': 10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/ionicons-sharp': 10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/ionicons-solid': 10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/material': 10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/material-outlined': 10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/material-rounded': 10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/material-sharp': 10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/material-twotone': 10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/octicons': 10.47.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/open-iconic': 10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/remix-editor': 10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/remix-fill': 10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/remix-line': 10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/simple-icons': 10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/styled-icon': 10.7.1(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/typicons': 10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@styled-icons/zondicons': 10.46.0(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      react: 18.3.1
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
   stylis@4.3.2: {}
 
@@ -8047,14 +8076,14 @@ snapshots:
 
   ts-dedent@2.2.0: {}
 
-  ts-node@10.9.2(@types/node@20.19.24)(typescript@4.9.5):
+  ts-node@10.9.2(@types/node@20.19.25)(typescript@4.9.5):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.9
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 20.19.24
+      '@types/node': 20.19.25
       acorn: 8.10.0
       acorn-walk: 8.2.0
       arg: 4.1.3
@@ -8173,7 +8202,7 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite@7.1.12(@types/node@20.19.24)(terser@5.44.0):
+  vite@7.1.12(@types/node@20.19.25)(terser@5.44.0):
     dependencies:
       esbuild: 0.25.11
       fdir: 6.5.0(picomatch@4.0.3)
@@ -8182,7 +8211,7 @@ snapshots:
       rollup: 4.52.5
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 20.19.24
+      '@types/node': 20.19.25
       fsevents: 2.3.3
       terser: 5.44.0
 
