@@ -3,6 +3,10 @@
 ## v0.11.0
 
 - Remove public icon due to conflicts down the line, replace it with PublicPublication
+- Added icons:
+  - Car2
+  - Clock
+  - File MP4
 
 ## v0.10.0
 
