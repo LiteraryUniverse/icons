@@ -18,13 +18,13 @@ Object.defineProperty(exports, "Accessibility", {
 Object.defineProperty(exports, "AccountSettings", {
   enumerable: true,
   get: function get() {
-    return _AccountSettings2.AccountSettings;
+    return _AccountSettings.AccountSettings;
   }
 });
 Object.defineProperty(exports, "AccountSettings2", {
   enumerable: true,
   get: function get() {
-    return _AccountSettings.AccountSettings2;
+    return _AccountSettings2.AccountSettings2;
   }
 });
 Object.defineProperty(exports, "AccountVerified", {
@@ -762,13 +762,13 @@ Object.defineProperty(exports, "FileJson", {
 Object.defineProperty(exports, "FileMp3", {
   enumerable: true,
   get: function get() {
-    return _FileMp.FileMp3;
+    return _FileMp2.FileMp3;
   }
 });
 Object.defineProperty(exports, "FileMp4", {
   enumerable: true,
   get: function get() {
-    return _FileMp2.FileMp4;
+    return _FileMp.FileMp4;
   }
 });
 Object.defineProperty(exports, "FilePdf", {
@@ -948,7 +948,7 @@ Object.defineProperty(exports, "Harbor", {
 Object.defineProperty(exports, "Heading", {
   enumerable: true,
   get: function get() {
-    return _Heading3.Heading;
+    return _Heading.Heading;
   }
 });
 Object.defineProperty(exports, "Heading1", {
@@ -960,19 +960,19 @@ Object.defineProperty(exports, "Heading1", {
 Object.defineProperty(exports, "Heading2", {
   enumerable: true,
   get: function get() {
-    return _Heading.Heading2;
+    return _Heading4.Heading2;
   }
 });
 Object.defineProperty(exports, "Heading3", {
   enumerable: true,
   get: function get() {
-    return _Heading6.Heading3;
+    return _Heading3.Heading3;
   }
 });
 Object.defineProperty(exports, "Heading4", {
   enumerable: true,
   get: function get() {
-    return _Heading4.Heading4;
+    return _Heading6.Heading4;
   }
 });
 Object.defineProperty(exports, "Heading5", {
@@ -1176,13 +1176,13 @@ Object.defineProperty(exports, "Lock", {
 Object.defineProperty(exports, "LogAudit1", {
   enumerable: true,
   get: function get() {
-    return _LogAudit2.LogAudit1;
+    return _LogAudit.LogAudit1;
   }
 });
 Object.defineProperty(exports, "LogAudit2", {
   enumerable: true,
   get: function get() {
-    return _LogAudit.LogAudit2;
+    return _LogAudit2.LogAudit2;
   }
 });
 Object.defineProperty(exports, "Login", {
@@ -1488,13 +1488,13 @@ Object.defineProperty(exports, "PublicPublication", {
 Object.defineProperty(exports, "Question", {
   enumerable: true,
   get: function get() {
-    return _Question.Question;
+    return _Question2.Question;
   }
 });
 Object.defineProperty(exports, "Question2", {
   enumerable: true,
   get: function get() {
-    return _Question2.Question2;
+    return _Question.Question2;
   }
 });
 Object.defineProperty(exports, "QuestionMarkInCircle", {
@@ -1695,6 +1695,36 @@ Object.defineProperty(exports, "Soundcloud", {
     return _Soundcloud.Soundcloud;
   }
 });
+Object.defineProperty(exports, "Speaker", {
+  enumerable: true,
+  get: function get() {
+    return _Speaker.Speaker;
+  }
+});
+Object.defineProperty(exports, "Speaker1", {
+  enumerable: true,
+  get: function get() {
+    return _Speaker2.Speaker1;
+  }
+});
+Object.defineProperty(exports, "Speaker2", {
+  enumerable: true,
+  get: function get() {
+    return _Speaker3.Speaker2;
+  }
+});
+Object.defineProperty(exports, "SpeakerMute", {
+  enumerable: true,
+  get: function get() {
+    return _SpeakerMute.SpeakerMute;
+  }
+});
+Object.defineProperty(exports, "SpeakerNone", {
+  enumerable: true,
+  get: function get() {
+    return _SpeakerNone.SpeakerNone;
+  }
+});
 Object.defineProperty(exports, "Specie", {
   enumerable: true,
   get: function get() {
@@ -1716,25 +1746,25 @@ Object.defineProperty(exports, "Spotify", {
 Object.defineProperty(exports, "StarRating0", {
   enumerable: true,
   get: function get() {
-    return _StarRating2.StarRating0;
+    return _StarRating.StarRating0;
   }
 });
 Object.defineProperty(exports, "StarRating100", {
   enumerable: true,
   get: function get() {
-    return _StarRating.StarRating100;
+    return _StarRating3.StarRating100;
   }
 });
 Object.defineProperty(exports, "StarRating25", {
   enumerable: true,
   get: function get() {
-    return _StarRating3.StarRating25;
+    return _StarRating4.StarRating25;
   }
 });
 Object.defineProperty(exports, "StarRating50", {
   enumerable: true,
   get: function get() {
-    return _StarRating4.StarRating50;
+    return _StarRating2.StarRating50;
   }
 });
 Object.defineProperty(exports, "State", {
@@ -1839,6 +1869,30 @@ Object.defineProperty(exports, "Temple", {
     return _Temple.Temple;
   }
 });
+Object.defineProperty(exports, "TextAlignCenter", {
+  enumerable: true,
+  get: function get() {
+    return _TextAlignCenter.TextAlignCenter;
+  }
+});
+Object.defineProperty(exports, "TextAlignJustify", {
+  enumerable: true,
+  get: function get() {
+    return _TextAlignJustify.TextAlignJustify;
+  }
+});
+Object.defineProperty(exports, "TextAlignLeft", {
+  enumerable: true,
+  get: function get() {
+    return _TextAlignLeft.TextAlignLeft;
+  }
+});
+Object.defineProperty(exports, "TextAlignRight", {
+  enumerable: true,
+  get: function get() {
+    return _TextAlignRight.TextAlignRight;
+  }
+});
 Object.defineProperty(exports, "TextArea", {
   enumerable: true,
   get: function get() {
@@ -1849,6 +1903,30 @@ Object.defineProperty(exports, "TextField", {
   enumerable: true,
   get: function get() {
     return _TextField.TextField;
+  }
+});
+Object.defineProperty(exports, "TextHorizontal", {
+  enumerable: true,
+  get: function get() {
+    return _TextHorizontal.TextHorizontal;
+  }
+});
+Object.defineProperty(exports, "TextLtr", {
+  enumerable: true,
+  get: function get() {
+    return _TextLtr.TextLtr;
+  }
+});
+Object.defineProperty(exports, "TextRtl", {
+  enumerable: true,
+  get: function get() {
+    return _TextRtl.TextRtl;
+  }
+});
+Object.defineProperty(exports, "TextVertical", {
+  enumerable: true,
+  get: function get() {
+    return _TextVertical.TextVertical;
   }
 });
 Object.defineProperty(exports, "Thumbnails", {
@@ -2097,352 +2175,365 @@ Object.defineProperty(exports, "Youtube", {
     return _Youtube.Youtube;
   }
 });
-var _Accessibility = require("./Accessibility");
-var _AccountSettings = require("./AccountSettings2");
-var _AccountVerified = require("./AccountVerified");
+var _AccountSettings = require("./AccountSettings");
 var _AboutUs = require("./AboutUs");
+var _Accessibility = require("./Accessibility");
+var _AccountSettings2 = require("./AccountSettings2");
+var _AccountVerified = require("./AccountVerified");
 var _Add = require("./Add");
-var _AddCircle = require("./AddCircle");
-var _AccountSettings2 = require("./AccountSettings");
 var _AddCart = require("./AddCart");
+var _AddCircle = require("./AddCircle");
 var _AddGroup = require("./AddGroup");
-var _AddPaymentMethod = require("./AddPaymentMethod");
 var _AddPicture = require("./AddPicture");
 var _AddToLibrary = require("./AddToLibrary");
+var _AddUser = require("./AddUser");
 var _AddToReadinglist = require("./AddToReadinglist");
-var _Amazon = require("./Amazon");
 var _AddVideo = require("./AddVideo");
 var _All = require("./All");
 var _AmazonPay = require("./AmazonPay");
-var _ApplePay = require("./ApplePay");
-var _Announcement = require("./Announcement");
-var _AddUser = require("./AddUser");
-var _ArrowBack = require("./ArrowBack");
-var _ArrowNext = require("./ArrowNext");
+var _AddPaymentMethod = require("./AddPaymentMethod");
+var _Amazon = require("./Amazon");
+var _Amex = require("./Amex");
 var _ArchiveOfOurOwn = require("./ArchiveOfOurOwn");
-var _ArrowUp = require("./ArrowUp");
-var _Author = require("./Author");
 var _ArrowDown = require("./ArrowDown");
-var _AuthorExternal = require("./AuthorExternal");
+var _ArrowBack = require("./ArrowBack");
+var _ApplePay = require("./ApplePay");
+var _ArrowNext = require("./ArrowNext");
 var _Assignment = require("./Assignment");
+var _ArrowUp = require("./ArrowUp");
 var _AssistantAi = require("./AssistantAi");
 var _Back = require("./Back");
-var _Ball = require("./Ball");
+var _AuthorExternal = require("./AuthorExternal");
+var _Author = require("./Author");
 var _BarChart = require("./BarChart");
-var _BetaDocument = require("./BetaDocument");
-var _BetaReader = require("./BetaReader");
+var _Ball = require("./Ball");
+var _Beach = require("./Beach");
+var _Announcement = require("./Announcement");
 var _BetaReaderUser = require("./BetaReaderUser");
-var _Binance = require("./Binance");
+var _BetaReader = require("./BetaReader");
+var _BetaDocument = require("./BetaDocument");
 var _Bitcoin = require("./Bitcoin");
-var _Blog = require("./Blog");
 var _Block = require("./Block");
 var _BlogPost = require("./BlogPost");
-var _BookmarkStory = require("./BookmarkStory");
-var _Bluesky = require("./Bluesky");
-var _Bug = require("./Bug");
 var _Bold = require("./Bold");
-var _BookmarkUniverse = require("./BookmarkUniverse");
-var _BuildSettings = require("./BuildSettings");
-var _Building = require("./Building");
-var _BulletList = require("./BulletList");
+var _Bluesky = require("./Bluesky");
+var _Blog = require("./Blog");
 var _Briefcase = require("./Briefcase");
+var _BookmarkStory = require("./BookmarkStory");
+var _BuildSettings = require("./BuildSettings");
+var _Binance = require("./Binance");
+var _BulletList = require("./BulletList");
+var _Bug = require("./Bug");
+var _Building = require("./Building");
+var _Campfire = require("./Campfire");
+var _Cancel = require("./Cancel");
+var _Calendar = require("./Calendar");
 var _CallSupport = require("./CallSupport");
 var _Capital = require("./Capital");
-var _Cancel = require("./Cancel");
-var _Campfire = require("./Campfire");
-var _Calendar = require("./Calendar");
+var _BookmarkUniverse = require("./BookmarkUniverse");
 var _Car = require("./Car");
-var _CancelFilled = require("./CancelFilled");
-var _Car2 = require("./Car2");
-var _Character = require("./Character");
 var _Castle = require("./Castle");
-var _Chapter = require("./Chapter");
-var _Check = require("./Check");
-var _ChartPie = require("./ChartPie");
 var _Cart = require("./Cart");
-var _Checkmark = require("./Checkmark");
+var _Chapter = require("./Chapter");
+var _Car2 = require("./Car2");
+var _ChartPie = require("./ChartPie");
+var _Character = require("./Character");
+var _Check = require("./Check");
 var _CloudUpload = require("./CloudUpload");
-var _Comment = require("./Comment");
-var _CommentImportant = require("./CommentImportant");
-var _CommentField = require("./CommentField");
 var _Collaborators = require("./Collaborators");
+var _Checkmark = require("./Checkmark");
+var _CancelFilled = require("./CancelFilled");
 var _Clock = require("./Clock");
+var _CommentField = require("./CommentField");
 var _CommentFilled = require("./CommentFilled");
-var _CommentHighlighted = require("./CommentHighlighted");
-var _Construction = require("./Construction");
-var _CompressedFile = require("./CompressedFile");
 var _CommentWarning = require("./CommentWarning");
+var _CommentImportant = require("./CommentImportant");
+var _CommentHighlighted = require("./CommentHighlighted");
+var _Comment = require("./Comment");
 var _Compass = require("./Compass");
-var _CookedChicken = require("./CookedChicken");
-var _Copy = require("./Copy");
+var _CompassFancy = require("./CompassFancy");
+var _CompressedFile = require("./CompressedFile");
+var _Construction = require("./Construction");
 var _Continent = require("./Continent");
 var _Connection = require("./Connection");
-var _Courses = require("./Courses");
-var _Country = require("./Country");
-var _Creature = require("./Creature");
 var _Critic = require("./Critic");
 var _Curicullum = require("./Curicullum");
+var _CookedChicken = require("./CookedChicken");
 var _Dashboard = require("./Dashboard");
-var _Devto = require("./Devto");
-var _Diety = require("./Diety");
 var _DeviantArt = require("./DeviantArt");
 var _Details = require("./Details");
+var _Devto = require("./Devto");
 var _Discord = require("./Discord");
-var _DiscordFilled = require("./DiscordFilled");
-var _Discovery = require("./Discovery");
-var _DndGrab = require("./DndGrab");
-var _Discover = require("./Discover");
+var _Copy = require("./Copy");
+var _Creature = require("./Creature");
 var _DinersClub = require("./DinersClub");
+var _Diety = require("./Diety");
 var _DiscoverCard = require("./DiscoverCard");
 var _Draft = require("./Draft");
+var _Discovery = require("./Discovery");
 var _DropdownArrow = require("./DropdownArrow");
-var _DropdownArrowFilled = require("./DropdownArrowFilled");
+var _DndGrab = require("./DndGrab");
 var _Encyclopedia = require("./Encyclopedia");
+var _Discover = require("./Discover");
 var _Dungeon = require("./Dungeon");
-var _EncyclopediaCategories = require("./EncyclopediaCategories");
-var _EncyclopediaOther = require("./EncyclopediaOther");
-var _EventSeat = require("./EventSeat");
-var _ExpandMore = require("./ExpandMore");
+var _Country = require("./Country");
 var _Ethereum = require("./Ethereum");
+var _ExpandMore = require("./ExpandMore");
+var _EncyclopediaCategories = require("./EncyclopediaCategories");
 var _Event = require("./Event");
-var _Export = require("./Export");
+var _EncyclopediaOther = require("./EncyclopediaOther");
+var _Courses = require("./Courses");
+var _EventSeat = require("./EventSeat");
 var _Facebook = require("./Facebook");
-var _ExternalLink = require("./ExternalLink");
-var _FacebookMessenger = require("./FacebookMessenger");
-var _FanArt = require("./FanArt");
-var _FamilyHouse = require("./FamilyHouse");
-var _Fans = require("./Fans");
-var _Feeds = require("./Feeds");
-var _FictionalTime = require("./FictionalTime");
 var _FanFiction = require("./FanFiction");
-var _File = require("./File");
+var _FacebookMessenger = require("./FacebookMessenger");
+var _DiscordFilled = require("./DiscordFilled");
+var _FamilyHouse = require("./FamilyHouse");
+var _FanArt = require("./FanArt");
+var _ExternalLink = require("./ExternalLink");
+var _FictionalTime = require("./FictionalTime");
 var _FictionalLanguage = require("./FictionalLanguage");
+var _Fans = require("./Fans");
+var _File = require("./File");
+var _Feeds = require("./Feeds");
 var _FileEpub = require("./FileEpub");
-var _FileCsv = require("./FileCsv");
-var _FileMp = require("./FileMp3");
+var _FileMp = require("./FileMp4");
+var _FileMp2 = require("./FileMp3");
 var _FileJson = require("./FileJson");
-var _FileMp2 = require("./FileMp4");
-var _FileXml = require("./FileXml");
+var _FileCsv = require("./FileCsv");
+var _FilePdf = require("./FilePdf");
 var _FileWav = require("./FileWav");
 var _Fire = require("./Fire");
-var _FilePdf = require("./FilePdf");
-var _Flag = require("./Flag");
 var _FlashChat = require("./FlashChat");
-var _FontSize = require("./FontSize");
-var _FontFamily = require("./FontFamily");
-var _Forest = require("./Forest");
 var _Flora = require("./Flora");
-var _Forum = require("./Forum");
+var _Forest = require("./Forest");
+var _Flag = require("./Flag");
 var _Fullscreen = require("./Fullscreen");
-var _Gab = require("./Gab");
+var _FileXml = require("./FileXml");
+var _Forum = require("./Forum");
 var _FullscreenExit = require("./FullscreenExit");
-var _Genre = require("./Genre");
-var _Github = require("./Github");
-var _Globe = require("./Globe");
+var _FontSize = require("./FontSize");
+var _Gab = require("./Gab");
 var _Gettr = require("./Gettr");
-var _Google = require("./Google");
 var _Gift = require("./Gift");
+var _FontFamily = require("./FontFamily");
 var _GoogleMeet = require("./GoogleMeet");
+var _Github = require("./Github");
+var _Genre = require("./Genre");
 var _Goodreads = require("./Goodreads");
-var _Government = require("./Government");
+var _Google = require("./Google");
 var _Group = require("./Group");
+var _Globe = require("./Globe");
 var _GroupWork = require("./GroupWork");
+var _Government = require("./Government");
 var _Hammering = require("./Hammering");
+var _Heading = require("./Heading");
 var _GroupChat = require("./GroupChat");
-var _Hamburger = require("./Hamburger");
-var _Harbor = require("./Harbor");
-var _Heading = require("./Heading2");
 var _Heading2 = require("./Heading1");
-var _Heading3 = require("./Heading");
-var _Heading4 = require("./Heading4");
-var _HeadphoneWithMic = require("./HeadphoneWithMic");
-var _Amex = require("./Amex");
+var _Hamburger = require("./Hamburger");
+var _Heading3 = require("./Heading3");
+var _Heading4 = require("./Heading2");
 var _Heading5 = require("./Heading5");
-var _Hearth = require("./Hearth");
-var _Heading6 = require("./Heading3");
-var _HearthFilled = require("./HearthFilled");
-var _Heading7 = require("./Heading6");
+var _HeadphoneWithMic = require("./HeadphoneWithMic");
 var _Health = require("./Health");
+var _Harbor = require("./Harbor");
+var _Heading6 = require("./Heading4");
+var _Heading7 = require("./Heading6");
+var _Hearth = require("./Hearth");
 var _Hide = require("./Hide");
-var _HearthWish = require("./HearthWish");
-var _Hourglass = require("./Hourglass");
-var _History = require("./History");
-var _Image = require("./Image");
-var _Home = require("./Home");
-var _Italic = require("./Italic");
 var _HistoryEdu = require("./HistoryEdu");
-var _Instagram = require("./Instagram");
+var _HearthFilled = require("./HearthFilled");
+var _HearthWish = require("./HearthWish");
 var _Inbox = require("./Inbox");
-var _Item = require("./Item");
-var _Jcb = require("./Jcb");
-var _Library = require("./Library");
+var _History = require("./History");
+var _Hourglass = require("./Hourglass");
 var _Info = require("./Info");
+var _Italic = require("./Italic");
+var _Instagram = require("./Instagram");
+var _Home = require("./Home");
+var _Item = require("./Item");
 var _LandmarkMonument = require("./LandmarkMonument");
+var _Image = require("./Image");
 var _LandmarkTower = require("./LandmarkTower");
-var _LightOn = require("./LightOn");
+var _Jcb = require("./Jcb");
 var _LightOff = require("./LightOff");
 var _LineChart = require("./LineChart");
-var _Line = require("./Line");
-var _List = require("./List");
+var _LightOn = require("./LightOn");
 var _ListNumbered = require("./ListNumbered");
 var _Linkedin = require("./Linkedin");
-var _Location = require("./Location");
+var _Library = require("./Library");
 var _Lock = require("./Lock");
-var _Beach = require("./Beach");
 var _ListView = require("./ListView");
+var _Location = require("./Location");
+var _List = require("./List");
+var _LogAudit = require("./LogAudit1");
+var _LogAudit2 = require("./LogAudit2");
 var _Logout = require("./Logout");
-var _Magic = require("./Magic");
 var _Login = require("./Login");
-var _LogAudit = require("./LogAudit2");
 var _LUStaff = require("./LUStaff");
-var _Mail = require("./Mail");
+var _Magic = require("./Magic");
 var _Mastodon = require("./Mastodon");
 var _MastodonJp = require("./MastodonJp");
-var _Meetup = require("./Meetup");
-var _Member = require("./Member");
-var _LogAudit2 = require("./LogAudit1");
+var _Mail = require("./Mail");
 var _Medium = require("./Medium");
-var _Milestone = require("./Milestone");
+var _MasterCard = require("./MasterCard");
 var _Meteor = require("./Meteor");
+var _Meetup = require("./Meetup");
+var _Milestone = require("./Milestone");
 var _Minecart = require("./Minecart");
+var _Member = require("./Member");
+var _Line = require("./Line");
 var _MobileMenu = require("./MobileMenu");
-var _CompassFancy = require("./CompassFancy");
-var _Monetized = require("./Monetized");
 var _MoneyCircle = require("./MoneyCircle");
-var _MoneyFancy = require("./MoneyFancy");
+var _Monetization = require("./Monetization");
 var _Mountain = require("./Mountain");
+var _MoneyFancy = require("./MoneyFancy");
 var _News = require("./News");
-var _NotePen = require("./NotePen");
+var _Monetized = require("./Monetized");
 var _NotesPersonal = require("./NotesPersonal");
+var _NotePen = require("./NotePen");
+var _Nusameta = require("./Nusameta");
 var _NumberList = require("./NumberList");
 var _Notification = require("./Notification");
 var _NotificationOff = require("./NotificationOff");
-var _Organization = require("./Organization");
-var _Nusameta = require("./Nusameta");
+var _DropdownArrowFilled = require("./DropdownArrowFilled");
+var _Minds = require("./Minds");
 var _ParagraphAlteration = require("./ParagraphAlteration");
 var _ParagraphHighlight = require("./ParagraphHighlight");
-var _ParagraphRuler = require("./ParagraphRuler");
+var _Organization = require("./Organization");
 var _ParagraphInitialLetter = require("./ParagraphInitialLetter");
-var _PenStar = require("./PenStar");
-var _Paypal = require("./Paypal");
-var _ParallelEconomy = require("./ParallelEconomy");
+var _Export = require("./Export");
 var _Pen = require("./Pen");
-var _Pinned = require("./Pinned");
+var _PenStar = require("./PenStar");
 var _Pin = require("./Pin");
+var _Paypal = require("./Paypal");
+var _Pinned = require("./Pinned");
 var _Pinterest = require("./Pinterest");
-var _Pixiv = require("./Pixiv");
+var _ParallelEconomy = require("./ParallelEconomy");
+var _ParagraphRuler = require("./ParagraphRuler");
 var _Planet = require("./Planet");
-var _Pomodoro = require("./Pomodoro");
-var _Press = require("./Press");
-var _Potion = require("./Potion");
 var _Printer = require("./Printer");
+var _Press = require("./Press");
 var _Profile = require("./Profile");
-var _ProfileIcon = require("./ProfileIcon");
 var _ProjectGutenberg = require("./ProjectGutenberg");
-var _PublicFigure = require("./PublicFigure");
-var _Question = require("./Question");
+var _ProfileIcon = require("./ProfileIcon");
+var _Question = require("./Question2");
 var _PublicPublication = require("./PublicPublication");
-var _Question2 = require("./Question2");
+var _PublicFigure = require("./PublicFigure");
+var _Question2 = require("./Question");
+var _Pixiv = require("./Pixiv");
 var _QuestionMarkInCircle = require("./QuestionMarkInCircle");
-var _Quote = require("./Quote");
 var _Quill = require("./Quill");
-var _Register = require("./Register2");
-var _ReadNow = require("./ReadNow");
-var _Reddit = require("./Reddit");
-var _ReaderMode = require("./ReaderMode");
-var _Religion = require("./Religion");
-var _Register2 = require("./Register1");
+var _Quote = require("./Quote");
 var _ReadingList = require("./ReadingList");
-var _Rocket = require("./Rocket");
-var _Robot = require("./Robot");
-var _Rumble = require("./Rumble");
-var _RssFeed = require("./RssFeed");
+var _Reddit = require("./Reddit");
+var _Register = require("./Register2");
+var _Register2 = require("./Register1");
 var _RevisedPublication = require("./RevisedPublication");
-var _Save = require("./Save");
-var _School = require("./School");
+var _ReadNow = require("./ReadNow");
+var _Religion = require("./Religion");
+var _Robot = require("./Robot");
+var _RssFeed = require("./RssFeed");
+var _ReaderMode = require("./ReaderMode");
+var _Rumble = require("./Rumble");
+var _Rocket = require("./Rocket");
 var _SceneManager = require("./SceneManager");
-var _Scroll = require("./Scroll");
+var _Save = require("./Save");
 var _ScratchpadUniverse = require("./ScratchpadUniverse");
-var _Scratchpad = require("./Scratchpad");
-var _Search = require("./Search");
+var _Scroll = require("./Scroll");
+var _School = require("./School");
 var _Send = require("./Send");
-var _MasterCard = require("./MasterCard");
+var _Scratchpad = require("./Scratchpad");
 var _Seznam = require("./Seznam");
-var _Share = require("./Share");
+var _Search = require("./Search");
+var _Settings = require("./Settings");
 var _SettingsForum = require("./SettingsForum");
-var _ShipSailingFront = require("./ShipSailingFront");
+var _Share = require("./Share");
 var _ShipSails = require("./ShipSails");
-var _Show = require("./Show");
 var _Signature = require("./Signature");
 var _Soundcloud = require("./Soundcloud");
-var _Minds = require("./Minds");
+var _Show = require("./Show");
 var _Social = require("./Social");
+var _SpeakerMute = require("./SpeakerMute");
+var _Speaker = require("./Speaker");
+var _Speaker2 = require("./Speaker1");
+var _Speaker3 = require("./Speaker2");
 var _Specie = require("./Specie");
-var _Spotify = require("./Spotify");
+var _ShipSailingFront = require("./ShipSailingFront");
 var _Sport = require("./Sport");
-var _StarRating = require("./StarRating100");
-var _StarRating2 = require("./StarRating0");
-var _StarRating3 = require("./StarRating25");
-var _StarRating4 = require("./StarRating50");
+var _Spotify = require("./Spotify");
+var _SpeakerNone = require("./SpeakerNone");
+var _StarRating = require("./StarRating0");
+var _StarRating2 = require("./StarRating50");
 var _State = require("./State");
+var _StarRating3 = require("./StarRating100");
 var _Stophand = require("./Stophand");
-var _Story = require("./Story");
 var _Steem = require("./Steem");
-var _Store = require("./Store");
-var _Strikeout = require("./Strikeout");
-var _Subscript = require("./Subscript");
-var _Stripe = require("./Stripe");
 var _Storyline = require("./Storyline");
-var _Swamp = require("./Swamp");
+var _Story = require("./Story");
+var _Strikeout = require("./Strikeout");
+var _StarRating4 = require("./StarRating25");
 var _Subscription = require("./Subscription");
+var _Store = require("./Store");
+var _Stripe = require("./Stripe");
+var _Subscript = require("./Subscript");
+var _Swamp = require("./Swamp");
+var _Tapas = require("./Tapas");
 var _Team = require("./Team");
 var _TableView = require("./TableView");
 var _Technology = require("./Technology");
-var _Monetization = require("./Monetization");
-var _TextArea = require("./TextArea");
+var _TextAlignJustify = require("./TextAlignJustify");
+var _TextAlignCenter = require("./TextAlignCenter");
 var _Telegram = require("./Telegram");
+var _TextAlignRight = require("./TextAlignRight");
+var _Temple = require("./Temple");
+var _TextAlignLeft = require("./TextAlignLeft");
+var _TextArea = require("./TextArea");
+var _TextLtr = require("./TextLtr");
 var _TextField = require("./TextField");
+var _TextRtl = require("./TextRtl");
 var _Thumbnails = require("./Thumbnails");
 var _Tier = require("./Tier1");
-var _ThumbsDown = require("./ThumbsDown");
+var _TextVertical = require("./TextVertical");
 var _Timeline = require("./Timeline");
-var _Temple = require("./Temple");
-var _Torch = require("./Torch");
+var _TextHorizontal = require("./TextHorizontal");
 var _Todo = require("./Todo");
+var _ThumbsDown = require("./ThumbsDown");
 var _Title = require("./Title");
-var _Twitch = require("./Twitch");
-var _Town = require("./Town");
 var _Translation = require("./Translation");
+var _Town = require("./Town");
+var _Twitter = require("./Twitter");
+var _Torch = require("./Torch");
+var _Trash = require("./Trash");
+var _Twitch = require("./Twitch");
 var _Underline = require("./Underline");
 var _Universe = require("./Universe");
-var _Trash = require("./Trash");
-var _Twitter = require("./Twitter");
 var _Unlock = require("./Unlock");
-var _Upload = require("./Upload");
 var _UserAcceptFriendship = require("./UserAcceptFriendship");
 var _UserDenyFriendship = require("./UserDenyFriendship");
-var _UserUnblock = require("./UserUnblock");
-var _UserRequestFriendship = require("./UserRequestFriendship");
-var _UserUnfriend = require("./UserUnfriend");
 var _UserCancelFriendshipRequest = require("./UserCancelFriendshipRequest");
-var _UserBlock = require("./UserBlock");
-var _Version = require("./Version");
-var _Village = require("./Village");
-var _Visa = require("./Visa");
-var _Vimeo = require("./Vimeo");
+var _UserRequestFriendship = require("./UserRequestFriendship");
+var _Upload = require("./Upload");
+var _UserUnfriend = require("./UserUnfriend");
+var _UserUnblock = require("./UserUnblock");
 var _UserVerified = require("./UserVerified");
-var _Vk = require("./Vk");
+var _Village = require("./Village");
+var _Vimeo = require("./Vimeo");
+var _Visa = require("./Visa");
+var _UserBlock = require("./UserBlock");
 var _Wallet = require("./Wallet");
+var _Version = require("./Version");
+var _Vk = require("./Vk");
+var _Web = require("./Web");
+var _Whatsapp = require("./Whatsapp");
+var _WizardHat = require("./WizardHat");
+var _Workshop = require("./Workshop");
+var _WirelessSignal = require("./WirelessSignal");
 var _Wattpad = require("./Wattpad");
 var _Warning = require("./Warning");
-var _Whatsapp = require("./Whatsapp");
-var _Workshop = require("./Workshop");
 var _WriterMode = require("./WriterMode");
-var _WirelessSignal = require("./WirelessSignal");
 var _X = require("./X");
 var _XLogo = require("./XLogo");
 var _Youtube = require("./Youtube");
-var _Web = require("./Web");
-var _WizardHat = require("./WizardHat");
-var _Settings = require("./Settings");
-var _Tapas = require("./Tapas");
+var _Potion = require("./Potion");
+var _Pomodoro = require("./Pomodoro");

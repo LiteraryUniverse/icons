@@ -1,6 +1,6 @@
 {
   "name": "@literary-universe/svg-icons",
-  "version": "0.11.2",
+  "version": "0.12.1",
   "license": "MIT",
   "description": "Literary Universe icons available as optimized SVGs",
   "author": "Jan Dvorak <jdvorak@literaryuniverse.com>",
@@ -25,8 +25,8 @@
     "clean": "clean-pack"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.5",
-    "@storybook/html": "^10.0.1",
+    "@babel/core": "^7.24.9",
+    "@storybook/html": "^10.0.8",
     "@svg-icons/pack-builder": "link:../../tools/builder",
     "core-js": "^3.37.1",
     "tiny-glob": "^0.2.9"

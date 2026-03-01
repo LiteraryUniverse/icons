@@ -1,5 +1,22 @@
 # @literary-universe/icons
 
+## v0.12.0
+
+- Added icons:
+  - Speaker
+  - Speaker1
+  - Speaker2
+  - SpeakerMute
+  - SpeakerNone
+  - TextAlightLeft
+  - TextAlightRight
+  - TextAlightCenter
+  - TextAlightJustify
+  - TextHorizontal
+  - TextVertical
+  - TextRTL
+  - TextLTR
+
 ## v0.11.1
 
 - Added icon Paragraph Initial Letter

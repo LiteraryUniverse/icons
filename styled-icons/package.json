@@ -37,9 +37,9 @@
     "@changesets/cli": "^2.29.8",
     "@monorepolint/cli": "^0.5.0",
     "@monorepolint/core": "0.5.0",
-    "@storybook/react-vite": "^10.2.8",
-    "storybook": "^10.2.8",
-    "@types/node": "^20.19.33",
+    "@storybook/react-vite": "^10.2.13",
+    "storybook": "^10.2.13",
+    "@types/node": "^20.19.35",
     "@types/react": "^19.2.14",
     "@types/styled-components": "^5.1.36",
     "babel-plugin-styled-components": "^2.1.4",
@@ -50,8 +50,8 @@
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-is": "^19.2.4",
-    "styled-components": "^6.3.9",
+    "styled-components": "^6.3.11",
     "typescript": "^5.9.3",
-    "webpack": "^5.105.2"
+    "webpack": "^5.105.3"
   }
 }
