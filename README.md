@@ -99,7 +99,8 @@ sha256sum dist/*.tgz
 `dist/` is ignored. Review the tarballs (`tar -tzf dist/<name>.tgz`) and install
 the styled tarball in a consumer to verify package resolution. The SVG package
 contains only SVG/JSON metadata and package documentation; the styled package
-contains generated JavaScript, declarations and package metadata.
+contains generated JavaScript, declarations and package metadata. Both packages
+include the repository MIT license, which is also preserved by clean scripts.
 
 Publishing is a separate maintainer step after review:
 
