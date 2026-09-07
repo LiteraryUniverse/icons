@@ -1,86 +1,115 @@
 # Literary Universe icons
 
-## Installation
+This repository owns the SVG artwork and generates two npm packages:
 
-There are two packages provided through this monorepo:
+- [`@literary-universe/svg-icons`](https://www.npmjs.com/package/@literary-universe/svg-icons): optimized SVG files and metadata.
+- [`@literary-universe/styled-icons`](https://www.npmjs.com/package/@literary-universe/styled-icons): React components with the [Styled Icons](https://styled-icons.dev/) API.
 
-[@literary-universe/svg-icons](https://www.npmjs.com/package/@literary-universe/svg-icons)
+```tsx
+import { Diary } from "@literary-universe/styled-icons/Diary";
 
-and
+<Diary size={32} color="currentColor" title="Diary" />;
+```
 
-[@literary-universe/styled-icons](https://www.npmjs.com/package/@literary-universe/styled-icons)
+Omit `title` for decorative icons; `StyledIconBase` supplies `aria-hidden` and
+`focusable="false"`. For an icon-only button, give the **button** an accessible
+name. Components forward refs and accept the normal StyledIcon props.
 
-You can install them as any npm package.
+## Artwork
 
+Canonical files live in `svg-icons/packages/literary-universe/source/`. Edit
+those files, then regenerate both packages. Do not hand-edit generated React
+components or copy SVG paths into the Literary Universe application.
 
-## Usage
+- Use `viewBox="0 0 32 32"` and `xmlns="http://www.w3.org/2000/svg"`.
+- Preserve the artwork's viewBox when importing existing designs: `Settings`
+  intentionally uses `0 0 33 32`. Do not stretch or crop it to force a square.
+- Use paths where practical. Preserve `fill="none"`, `fill-rule`, `clip-rule`,
+  `stroke="currentColor"`, stroke widths, caps and joins when they affect the
+  drawing. Stroke-to-fill conversion is optional; removing these attributes
+  changes outlined icons into filled shapes.
+- Remove hard-coded colors, editor metadata and unused clipping/definitions.
+  The generated package supplies `fill="currentColor"`.
+- Keep directional artwork left-to-right. Consumers handle direction changes.
+- Keep existing filenames/export names stable, including historical names such
+  as `Hearth` and `ProfileIcon`. Choose descriptive names for new artwork.
+- Publish new design originals on Figma as part of the design workflow.
 
-You use these packages as you would any [svg-icons](https://github.com/svg-icons/svg-icons) or [styled-icons](https://styled-icons.dev/).
+Figma export reference:
 
-## Adding new icon
+![Select the SVG icon in Figma](./figma-1.png)
+![Copy SVG code](./figma-2.png)
 
-All the icons should be designed by Literary Universe's design crew, following some conventions:
+## Navigation and dashboard set (0.13.0)
 
-- The view box must have the dimensions of 32x32 units;
-- Any horizontal asymmetry must follow the left-to-right direction.
-- The icon must be published on Figma.
+[design/nav-icon-set.json](./design/nav-icon-set.json) records each imported
+component, SVG filename and source revision in
+[StorytellerCZ/Literary-Universe](https://github.com/StorytellerCZ/Literary-Universe).
+All 35 icons from merged dashboard PR #905 are included, plus the 23 additional
+icons from `feat/nav-icon-set` (`ee55c73a1`). The merged version of `Diary` wins
+its insignificant coordinate-rounding difference. Existing exports are retained;
+`AudioBooks`, `Bookmark`, `Diary` and `MangaComics` are new package exports.
 
-As the icons might be arbitrarily scaled, the chosen source format for individual icon graphics is
-SVG. As Figma can export graphics with some additional SVG attributes and elements, they must be
-removed:
+The release also repairs the build path needed for this artwork:
 
-- The `<svg>` element must contain only two attributes: `viewBox` (probably with the value of`"0 0 32 32"`) and
-  `xmlns`;
-- XLink references (e.g. masks and clip paths) must be discarded;
-- The `<path>` elements must keep only the `d` attribute, with no additional styling attribute;
-- `<g>` and other elements must be stripped by [Iconli optimization tooling](https://iconly.io/tools/svg-convert-stroke-to-fill), keeping only `<path>` elements.
+- The SVG pnpm workspace lists its packages; previously `npm run build` could
+  report success without building any icons.
+- The styled package links the sibling SVG package for development, so both
+  artifacts can be built and tested before either is published.
+- The component generator resolves the SVG package from its consumer, preserves
+  root stroke width and the complete viewBox, and emits the correct package
+  import paths and original SVG names in its manifest.
+- The styled build generates components once, compiles CJS/ESM/declarations,
+  then generates Storybook from the completed package.
+- SVG Storybook inherits a preview color instead of replacing `fill="none"`.
+  The SVG manifest is sorted for reproducible builds.
 
-### Exporting from Figma
+## Build and verify
 
-When exporting from Figma select the icon directly so that Figma offers you the SVG code in the sidebar.
+Use Node 24 and pnpm 10. Run these commands **from the repository root**:
 
-![select svg icon in figma](./figma-1.png)
+```sh
+pnpm --dir svg-icons install --frozen-lockfile
+pnpm --dir styled-icons install --frozen-lockfile
+pnpm --dir svg-icons build
+pnpm --dir styled-icons build:icons
+pnpm --dir styled-icons test:icons
+```
 
-Copy the SVG code:
+The test renders every public component, checks per-icon imports and accessible
+names/decorative behavior, verifies outlines and the non-square viewBox, and
+exercises generation from a consumer-local SVG dependency. CJS, ESM and TypeScript
+builds run as part of `build:icons`.
 
-![copy SVG code](./figma-2.png)
+Preview with `pnpm --dir svg-icons storybook` or
+`pnpm --dir styled-icons/storybook storybook`. Inspect both filled and outlined
+icons, light/dark colors, and sizes used by the application.
 
-Go then to [Iconly SVG stroke convertor](https://iconly.io/tools/svg-convert-stroke-to-fill), this will convert the SVG code to webfont SVG.
+## Prepare a release
 
-Save the file in `./svg-icons/packages/literary-universe/source`
+Update both package versions and changelogs, build and verify as above, then:
 
-Open up the file and make sure that `fill="none"` is not present in the top `<svg>` element.
+```sh
+mkdir -p dist
+(cd svg-icons/packages/literary-universe && pnpm pack --pack-destination ../../../dist)
+(cd styled-icons/packages/styled-icons && pnpm pack --pack-destination ../../../dist)
+sha256sum dist/*.tgz
+```
 
-Finally, you can optimize the SVG code in [SVGOMG](https://jakearchibald.github.io/svgomg/) tool. Besides the defaults it is recommended to turn on multipass, pretify markup, reduce duplicate elements with links, remove out-of-bounds paths and prefer viewBox to width/height.
+`dist/` is ignored. Review the tarballs (`tar -tzf dist/<name>.tgz`) and install
+the styled tarball in a consumer to verify package resolution. The SVG package
+contains only SVG/JSON metadata and package documentation; the styled package
+contains generated JavaScript, declarations and package metadata.
 
-Copy the resulting code (or override the existing file) in the resources folder.
+Publishing is a separate maintainer step after review:
 
-The filenames define the icon names, so they
-should stick with a basic rule: **an icon name must describe the icon shape, not its utility**. For instance:
+```sh
+npm publish ./dist/literary-universe-svg-icons-0.13.0.tgz --access public
+npm publish ./dist/literary-universe-styled-icons-0.13.0.tgz --access public
+```
 
-- [ ] `message.svg` (wrong)
-- [x] `balloon.svg` (right)
-
-### svg-icons
-
-Next step is to generate optimized svg icons from the source files.
-
-Go to `./svg-icons/`
-
-Make sure that you have `pnpm` installed and through it install dependencies.
-
-Then run `npm run build`. This will take the source icons and build them for the package purposes.
-
-You should run `npm run storybook` to check that the new icons are displaying properly.
-
-Finally, if you have the permissions go to the package `./svg-icons/packages/literary-universe` and publish it.
-
-### styled-icons
-
-Once the svg-icons package is published you can make that into styled-icons package.
-
-Go to `./styled-icons/packages/styled-icons/package.json` and in dependencies update `@literary-universe/svg-icons` to the latest version. 
-
-Go to `./styled-icons/`. Install all dependencies via pnpm.
-
-Then run `npm run build:icons`. That is it! You can now publish the package with the latest icons added.
+Then tag the source commit and publish release notes. Literary Universe can test
+and ship the prepared styled tarball before registry publication. Once published,
+replace its temporary `file:../vendor/...tgz` dependency with `0.13.0`, regenerate
+its npm lockfiles, and remove the vendored artifact. No bundler or TypeScript
+aliases are needed.

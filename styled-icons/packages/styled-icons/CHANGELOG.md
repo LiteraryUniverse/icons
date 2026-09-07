@@ -1,5 +1,15 @@
 # @literary-universe/icons
 
+## v0.13.0
+
+- Adopt 58 dashboard/navigation designs from Literary Universe PR #905 and
+  `feat/nav-icon-set`; preserve every existing export.
+- Add AudioBooks, Bookmark, Diary and MangaComics.
+- Preserve outlined paths, currentColor, fill rules and Settings' 33×32 viewBox.
+- Build directly from the sibling SVG package before publication; fix consumer
+  dependency resolution, root stroke-width/viewBox preservation and manifest import paths.
+- Verify all 366 component entry points and StyledIcon accessibility behavior.
+
 ## v0.12.0
 
 - Added icons:

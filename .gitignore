@@ -2,3 +2,4 @@
 backup/
 
 svg-icons/node_modules/
+/dist/

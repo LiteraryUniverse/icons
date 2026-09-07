@@ -39,11 +39,11 @@ const baseDir = process.cwd()
 function svgMetadata(source) {
   const ast = svgParser.parse(source)
   const svgNode = ast.children.find((node) => node.type === 'element' && node.tagName === 'svg')
-  
+
   if (!svgNode || svgNode.type !== 'element') {
     throw new Error('Invalid SVG: No root SVG element found')
   }
-  
+
   const attrs = svgNode.properties || {}
   const viewBox = attrs['viewBox'] ? attrs['viewBox'].toString().split(' ') : ['0', '0', '24', '24']
   const [, , width, height] = viewBox
@@ -105,16 +105,21 @@ import React from 'react';
 
 // Static imports for all SVG files
 ${icons
-  .map((/** @type {Icon} */ icon) => `import ${icon.originalName.replace(/[-]/g, '_')}Svg from './${icon.originalName}.svg?raw';`)
+  .map(
+    (/** @type {Icon} */ icon) =>
+      `import ${icon.originalName.replace(/[-]/g, '_')}Svg from './${icon.originalName}.svg?raw';`,
+  )
   .join('\n')}
 
 const IconsGrid = () => {
   const iconData = [
 ${icons
-  .map((/** @type {Icon} */ icon) => `    {
+  .map(
+    (/** @type {Icon} */ icon) => `    {
       name: '${icon.originalName}',
       svg: ${icon.originalName.replace(/[-]/g, '_')}Svg
-    },`)
+    },`,
+  )
   .join('\n')}
   ];
 
@@ -148,13 +153,10 @@ ${icons
       React.createElement('div', {
         key: 'icon',
         dangerouslySetInnerHTML: {
-          __html: icon.svg
-            .replace(/fill="[^"]*"/g, 'fill="red"')
-            .replace(/stroke="[^"]*"/g, 'stroke="red"')
-            .replace(/fill="currentColor"/g, 'fill="red"')
-            .replace(/stroke="currentColor"/g, 'stroke="red"')
+          __html: icon.svg.replace('<svg ', '<svg width="48" height="48" ')
         },
         style: {
+          color: 'red',
           width: '48px',
           height: '48px',
           margin: '0 auto'
@@ -180,7 +182,10 @@ export const icons = {
 `.trim(),
   )
 
-  await fs.writeJSON('__manifest.json', manifest)
+  await fs.writeJSON(
+    '__manifest.json',
+    manifest.sort((a, b) => a.name.localeCompare(b.name)),
+  )
 
   console.log(`${totalIcons} icons successfully built!`)
 }
