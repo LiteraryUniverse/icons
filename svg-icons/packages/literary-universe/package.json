@@ -15,7 +15,8 @@
   },
   "files": [
     "*.json",
-    "*.svg"
+    "*.svg",
+    "CHANGELOG.md"
   ],
   "publishConfig": {
     "access": "public"

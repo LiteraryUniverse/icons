@@ -6,9 +6,11 @@
   `feat/nav-icon-set`; preserve every existing export.
 - Add AudioBooks, Bookmark, Diary and MangaComics.
 - Preserve outlined paths, currentColor, fill rules and Settings' 33×32 viewBox.
-- Build directly from the sibling SVG package before publication; fix consumer
+- Build from SVG icons with the Harbor paint correction; fix consumer
   dependency resolution, root stroke-width/viewBox preservation and manifest import paths.
 - Verify all 366 component entry points and StyledIcon accessibility behavior.
+- Include the multipass-optimized SVG artwork and corrected DeviantArt path
+  from SVG icons 0.13.0, including Harbor's visible currentColor fill.
 
 ## v0.12.0
 

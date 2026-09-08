@@ -54,8 +54,9 @@ The release also repairs the build path needed for this artwork:
 
 - The SVG pnpm workspace lists its packages; previously `npm run build` could
   report success without building any icons.
-- The styled package links the sibling SVG package for development, so both
-  artifacts can be built and tested before either is published.
+- The styled package currently links the sibling SVG package for the Harbor fix.
+  Publish SVG icons 0.13.0, then replace this link with the registry version
+  and regenerate the styled release before publication.
 - The component generator resolves the SVG package from its consumer, preserves
   root stroke width and the complete viewBox, and emits the correct package
   import paths and original SVG names in its manifest.

@@ -2,12 +2,17 @@
 
 ## v0.13.0
 
+- Preserve explicit path colors as currentColor during optimization, fixing
+  Harbor's invisible path beneath a fill="none" root.
+
 - Adopt 58 dashboard/navigation designs from Literary Universe PR #905 and
   `feat/nav-icon-set`; preserve every existing export.
 - Add AudioBooks, Bookmark, Diary and MangaComics.
 - Preserve outlined paths, currentColor, fill rules and Settings' 33×32 viewBox.
 - Restore SVG workspace builds, sort generated metadata, and preserve fill="none"
   in Storybook previews.
+- Enable multipass SVG optimization and remove the redundant DeviantArt mask
+  so its artwork renders without a broken mask reference.
 
 ## v0.12.0
 

@@ -29,6 +29,7 @@ test('all generated entry points render and keep the StyledIcon accessibility AP
 })
 
 test('redesigned outlines and non-square Settings preserve their source geometry', () => {
+  assert.match(render(icons.Harbor), /<path[^>]*fill="currentColor"/)
   assert.match(render(icons.Cancel), /fill="none" stroke="currentColor"[^>]*stroke-width="2"/)
   assert.match(render(icons.Diary), /fill="none" stroke="currentColor"[^>]*stroke-width="1.26"/)
   assert.match(render(icons.AccountSettings), /fill-rule="evenodd"/)
