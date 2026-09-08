@@ -1,0 +1,350 @@
+[
+  {
+    "name": "AboutUs",
+    "source": "about-us.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "AccountSettings",
+    "source": "account-settings.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "AddCircle",
+    "source": "add-circle.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "AddGroup",
+    "source": "add-group.svg",
+    "revision": "ee55c73a1",
+    "new": false
+  },
+  {
+    "name": "ArrowBack",
+    "source": "arrow-back.svg",
+    "revision": "ee55c73a1",
+    "new": false
+  },
+  {
+    "name": "ArrowDown",
+    "source": "arrow-down.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "ArrowNext",
+    "source": "arrow-next.svg",
+    "revision": "ee55c73a1",
+    "new": false
+  },
+  {
+    "name": "ArrowUp",
+    "source": "arrow-up.svg",
+    "revision": "ee55c73a1",
+    "new": false
+  },
+  {
+    "name": "AudioBooks",
+    "source": "audio-books.svg",
+    "revision": "03f508ce1",
+    "new": true
+  },
+  {
+    "name": "Blog",
+    "source": "blog.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Bookmark",
+    "source": "bookmark.svg",
+    "revision": "ee55c73a1",
+    "new": true
+  },
+  {
+    "name": "Briefcase",
+    "source": "briefcase.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Cancel",
+    "source": "cancel.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Chapter",
+    "source": "chapter.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Check",
+    "source": "check.svg",
+    "revision": "ee55c73a1",
+    "new": false
+  },
+  {
+    "name": "Checkmark",
+    "source": "checkmark.svg",
+    "revision": "ee55c73a1",
+    "new": false
+  },
+  {
+    "name": "Comment",
+    "source": "comment.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Dashboard",
+    "source": "dashboard.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Details",
+    "source": "details.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Diary",
+    "source": "diary.svg",
+    "revision": "03f508ce1",
+    "new": true
+  },
+  {
+    "name": "Discover",
+    "source": "discover.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Discovery",
+    "source": "discovery.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Draft",
+    "source": "draft.svg",
+    "revision": "ee55c73a1",
+    "new": false
+  },
+  {
+    "name": "Genre",
+    "source": "genre.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Group",
+    "source": "group.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Hearth",
+    "source": "hearth.svg",
+    "revision": "ee55c73a1",
+    "new": false
+  },
+  {
+    "name": "HearthFilled",
+    "source": "hearth-filled.svg",
+    "revision": "ee55c73a1",
+    "new": false
+  },
+  {
+    "name": "HearthWish",
+    "source": "hearth-wish.svg",
+    "revision": "ee55c73a1",
+    "new": false
+  },
+  {
+    "name": "Hide",
+    "source": "hide.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Inbox",
+    "source": "inbox.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Library",
+    "source": "library.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "LightOff",
+    "source": "light-off.svg",
+    "revision": "ee55c73a1",
+    "new": false
+  },
+  {
+    "name": "LightOn",
+    "source": "light-on.svg",
+    "revision": "ee55c73a1",
+    "new": false
+  },
+  {
+    "name": "Lock",
+    "source": "lock.svg",
+    "revision": "ee55c73a1",
+    "new": false
+  },
+  {
+    "name": "Mail",
+    "source": "mail.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "MangaComics",
+    "source": "manga-comics.svg",
+    "revision": "03f508ce1",
+    "new": true
+  },
+  {
+    "name": "MoneyCircle",
+    "source": "money-circle.svg",
+    "revision": "ee55c73a1",
+    "new": false
+  },
+  {
+    "name": "News",
+    "source": "news.svg",
+    "revision": "ee55c73a1",
+    "new": false
+  },
+  {
+    "name": "NotePen",
+    "source": "note-pen.svg",
+    "revision": "ee55c73a1",
+    "new": false
+  },
+  {
+    "name": "Notification",
+    "source": "notification.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Organization",
+    "source": "organization.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Pen",
+    "source": "pen.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "ProfileIcon",
+    "source": "profile-icon.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Robot",
+    "source": "robot.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Save",
+    "source": "save.svg",
+    "revision": "ee55c73a1",
+    "new": false
+  },
+  {
+    "name": "Search",
+    "source": "search.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Settings",
+    "source": "settings.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Share",
+    "source": "share.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Show",
+    "source": "show.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Story",
+    "source": "story.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Subscription",
+    "source": "subscription.svg",
+    "revision": "ee55c73a1",
+    "new": false
+  },
+  {
+    "name": "Team",
+    "source": "team.svg",
+    "revision": "ee55c73a1",
+    "new": false
+  },
+  {
+    "name": "Trash",
+    "source": "trash.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Universe",
+    "source": "universe.svg",
+    "revision": "03f508ce1",
+    "new": false
+  },
+  {
+    "name": "Unlock",
+    "source": "unlock.svg",
+    "revision": "ee55c73a1",
+    "new": false
+  },
+  {
+    "name": "Upload",
+    "source": "upload.svg",
+    "revision": "ee55c73a1",
+    "new": false
+  },
+  {
+    "name": "Wallet",
+    "source": "wallet.svg",
+    "revision": "ee55c73a1",
+    "new": false
+  },
+  {
+    "name": "Workshop",
+    "source": "workshop.svg",
+    "revision": "03f508ce1",
+    "new": false
+  }
+]

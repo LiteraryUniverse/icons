@@ -2,9 +2,10 @@
 
 const svgo = require('svgo')
 
-const currentColor = process.env.CURRENT_COLOR
+const currentColor = process.env.CURRENT_COLOR || true
 
 const svgoOptions = {
+  multipass: true,
   plugins: [
     'cleanupAttrs',
     'inlineStyles',
@@ -26,7 +27,7 @@ const svgoOptions = {
     'cleanupEnableBackground',
     'minifyStyles',
     'convertStyleToAttrs',
-    ...(currentColor ? [{name: 'convertColors', params: {currentColor}}] : []),
+    {name: 'convertColors', params: {currentColor}},
     'convertPathData',
     'convertTransform',
     'removeUnknownsAndDefaults',

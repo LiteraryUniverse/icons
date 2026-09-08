@@ -1,6 +1,6 @@
 {
   "name": "@literary-universe/svg-icons",
-  "version": "0.12.1",
+  "version": "0.13.0",
   "license": "MIT",
   "description": "Literary Universe icons available as optimized SVGs",
   "author": "Jan Dvorak <jdvorak@literaryuniverse.com>",
@@ -15,7 +15,8 @@
   },
   "files": [
     "*.json",
-    "*.svg"
+    "*.svg",
+    "CHANGELOG.md"
   ],
   "publishConfig": {
     "access": "public"

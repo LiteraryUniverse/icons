@@ -14,7 +14,7 @@
     "trailingComma": "all"
   },
   "scripts": {
-    "build:icons": "pnpm run -r --filter=\"!storybook\" generate && run-p 'build:icons:*' && pnpm run -r generate && pnpm generate:pkg",
+    "build:icons": "pnpm --filter @literary-universe/styled-icons generate && run-p 'build:icons:*' && pnpm --filter @styled-icons/storybook generate && pnpm generate:pkg",
     "build:icons:cjs": "env BABEL_ENV=legacy pnpm babel packages --extensions '.ts,.tsx' --out-dir packages",
     "build:icons:esm": "env BABEL_ENV=modern pnpm babel packages --extensions '.ts,.tsx' --out-dir packages --out-file-extension .esm.js",
     "build:icons:typescript": "find packages -name '*.d.ts' -not -path '*/node_modules/*' -delete && pnpm tsc --emitDeclarationOnly",
@@ -24,7 +24,8 @@
     "generate": "pnpm run -r generate",
     "update-all": "ncu -u -p npm --deep --dep dev,optional,prod,bundle --reject typescript && pnpm i --no-frozen-lockfile",
     "generate:pkg": "find packages -name 'package.built.json' -not -path '*/node_modules/*' -exec bash -c 'mv \"$1\" \"${1%.built.json}\".json' - '{}' \\;",
-    "release": "pnpm build:icons && pnpm changeset publish"
+    "release": "pnpm build:icons && pnpm changeset publish",
+    "test:icons": "node --test tools/builder/test-package.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.29.7",

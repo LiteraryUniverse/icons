@@ -1,6 +1,6 @@
 {
   "name": "@literary-universe/styled-icons",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "license": "MIT",
   "description": "Literary Universe icons available as Styled Components",
   "author": "Jan Dvorak <jdvorak@literaryuniverse.com>",
@@ -37,7 +37,7 @@
     "styled-components": "*"
   },
   "devDependencies": {
-    "@literary-universe/svg-icons": "0.12.1",
+    "@literary-universe/svg-icons": "link:../../../svg-icons/packages/literary-universe",
     "@styled-icons/pack-builder": "workspace:^10.7.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",

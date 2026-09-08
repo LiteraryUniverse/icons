@@ -5,12 +5,13 @@
     "tools/*"
   ],
   "scripts": {
+    "test:icons": "node --test tools/builder/test-svgo.js",
     "build": "pnpm run -r build",
     "build-storybook": "storybook build",
     "clean": "pnpm run -r clean",
     "fmt": "prettier --write './**/*.{ts,tsx,js,md,json}'",
     "fmt:check": "prettier --list-different './**/*.{ts,tsx,js,md,json}'",
-    "release": "yarn build && yarn changeset publish",
+    "release": "pnpm build && pnpm changeset publish",
     "storybook": "storybook dev -p 6006"
   },
   "devDependencies": {

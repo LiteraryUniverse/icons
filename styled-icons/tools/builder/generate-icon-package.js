@@ -13,6 +13,7 @@ const SVG_ATTRS = [
   'fill-opacity',
   'fill-rule',
   'stroke',
+  'stroke-width',
   'stroke-dasharray',
   'stroke-dashoffset',
   'stroke-linecap',
@@ -63,7 +64,10 @@ const pkgJSONBuilt = (name) => `{
 
 const generate = async () => {
   const packModuleName = process.argv[2]
-  let icons = require(path.join(packModuleName, '__manifest.json'))
+  const manifestPath = require.resolve(path.join(packModuleName, '__manifest.json'), {paths: [baseDir]})
+  const packDir = path.dirname(manifestPath)
+  const packageName = require(path.join(baseDir, 'package.json')).name
+  let icons = require(manifestPath)
 
   if (icons.length === 0) {
     console.error('Error reading icons from pack')
@@ -82,16 +86,13 @@ const generate = async () => {
   for (const icon of icons) {
     const state = {}
 
-    let result = fs
-      .readFileSync(
-        path.join(path.dirname(require.resolve(path.join(packModuleName, '__manifest.json'))), `${icon.name}.svg`),
-      )
-      .toString('utf8')
+    let result = fs.readFileSync(path.join(packDir, `${icon.name}.svg`)).toString('utf8')
     result = await h2x(result, state).join('\n      ')
 
+    icon.originalName = icon.name
     icon.name = getComponentName(icon.name)
     icon.pack = path.basename(baseDir)
-    icon.viewBox = icon.viewBox || `0 0 ${icon.width} ${icon.height}`
+    icon.viewBox = icon.attrs.viewBox || `0 0 ${icon.width} ${icon.height}`
 
     const attrs = {fill: 'currentColor', xmlns: 'http://www.w3.org/2000/svg'}
 
@@ -166,7 +167,7 @@ const generate = async () => {
     path.join(baseDir, 'manifest.json'),
     allIcons
       .map(({name, originalName, pack}) => {
-        const importPath = `@styled-icons/${pack}/${name}`
+        const importPath = `${packageName}/${name}`
 
         if (seenImports.has(importPath)) return null
         seenImports.add(importPath)
