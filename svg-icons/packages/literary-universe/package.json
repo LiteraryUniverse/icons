@@ -25,10 +25,10 @@
     "clean": "clean-pack"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.9",
-    "@storybook/html": "^10.0.8",
+    "@babel/core": "^7.29.7",
+    "@storybook/html": "^10.6.0",
     "@svg-icons/pack-builder": "link:../../tools/builder",
-    "core-js": "^3.37.1",
+    "core-js": "^3.50.0",
     "tiny-glob": "^0.2.9"
   }
 }
