@@ -84,7 +84,7 @@ const generate = async () => {
 
   const iconFiles = uniqueIcons.map(async (/** @type {Icon} */ icon) => {
     try {
-      const {data} = await svgo.optimize(icon.source)
+      const {data} = await svgo.optimize(icon.source, icon.originalName)
       await fs.writeFile(`${icon.originalName}.svg`, data)
       const metadata = svgMetadata(data)
       manifest.push({name: icon.originalName, ...metadata})
