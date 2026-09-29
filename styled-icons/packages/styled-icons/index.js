@@ -1623,6 +1623,12 @@ Object.defineProperty(exports, "ProjectGutenberg", {
     return _ProjectGutenberg.ProjectGutenberg;
   }
 });
+Object.defineProperty(exports, "Public", {
+  enumerable: true,
+  get: function get() {
+    return _Public.Public;
+  }
+});
 Object.defineProperty(exports, "PublicFigure", {
   enumerable: true,
   get: function get() {
@@ -2613,6 +2619,7 @@ var _Printer = require("./Printer");
 var _Profile = require("./Profile");
 var _ProfileIcon = require("./ProfileIcon");
 var _ProjectGutenberg = require("./ProjectGutenberg");
+var _Public = require("./Public");
 var _PublicFigure = require("./PublicFigure");
 var _PublicPublication = require("./PublicPublication");
 var _Question = require("./Question");

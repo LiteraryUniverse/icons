@@ -268,6 +268,7 @@ export { Printer } from './Printer';
 export { Profile } from './Profile';
 export { ProfileIcon } from './ProfileIcon';
 export { ProjectGutenberg } from './ProjectGutenberg';
+export { Public } from './Public';
 export { PublicFigure } from './PublicFigure';
 export { PublicPublication } from './PublicPublication';
 export { Question } from './Question';
