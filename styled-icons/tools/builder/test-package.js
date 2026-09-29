@@ -14,7 +14,7 @@ const manifest = require(path.join(packageDir, 'manifest.json'))
 const render = (Icon, props) => renderToStaticMarkup(React.createElement(Icon, props))
 
 test('all generated entry points render and keep the StyledIcon accessibility API', () => {
-  assert.equal(manifest.length, 367)
+  assert.equal(manifest.length, 390)
   for (const {name, importPath, originalName} of manifest) {
     assert.equal(importPath, `@literary-universe/styled-icons/${name}`)
     assert.ok(originalName)
