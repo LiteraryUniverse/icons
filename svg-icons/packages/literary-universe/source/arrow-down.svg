@@ -1,11 +1,1 @@
-<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-    <path
-      fill="none"
-      stroke="currentColor"
-      stroke-width="1.12412"
-      stroke-miterlimit="10"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      d="M28 8L15.9719 24L4 8"
-    />
-</svg>
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M25.583 10.032C25.328 9.844 24.971 9.9 24.784 10.154L17.493 20.069C17.14 20.549 16.596 20.825 16 20.825C15.404 20.825 14.86 20.549 14.507 20.069L7.216 10.154C7.028 9.9 6.672 9.844 6.417 10.032C6.163 10.219 6.108 10.577 6.295 10.831L13.587 20.747C14.157 21.523 15.037 21.968 16 21.968C16.963 21.968 17.843 21.523 18.413 20.747L25.705 10.831C25.892 10.577 25.837 10.219 25.583 10.032Z"/></svg>
