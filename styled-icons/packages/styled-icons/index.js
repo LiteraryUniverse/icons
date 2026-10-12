@@ -1917,6 +1917,12 @@ Object.defineProperty(exports, "StarRating50", {
     return _StarRating4.StarRating50;
   }
 });
+Object.defineProperty(exports, "StarRating75", {
+  enumerable: true,
+  get: function get() {
+    return _StarRating5.StarRating75;
+  }
+});
 Object.defineProperty(exports, "State", {
   enumerable: true,
   get: function get() {
@@ -2089,6 +2095,24 @@ Object.defineProperty(exports, "ThumbsDown", {
   enumerable: true,
   get: function get() {
     return _ThumbsDown.ThumbsDown;
+  }
+});
+Object.defineProperty(exports, "ThumbsDownFilled", {
+  enumerable: true,
+  get: function get() {
+    return _ThumbsDownFilled.ThumbsDownFilled;
+  }
+});
+Object.defineProperty(exports, "ThumbsUp", {
+  enumerable: true,
+  get: function get() {
+    return _ThumbsUp.ThumbsUp;
+  }
+});
+Object.defineProperty(exports, "ThumbsUpFilled", {
+  enumerable: true,
+  get: function get() {
+    return _ThumbsUpFilled.ThumbsUpFilled;
   }
 });
 Object.defineProperty(exports, "Tier1", {
@@ -2662,6 +2686,7 @@ var _StarRating = require("./StarRating0");
 var _StarRating2 = require("./StarRating100");
 var _StarRating3 = require("./StarRating25");
 var _StarRating4 = require("./StarRating50");
+var _StarRating5 = require("./StarRating75");
 var _State = require("./State");
 var _Steem = require("./Steem");
 var _Stophand = require("./Stophand");
@@ -2691,6 +2716,9 @@ var _TextRtl = require("./TextRtl");
 var _TextVertical = require("./TextVertical");
 var _Thumbnails = require("./Thumbnails");
 var _ThumbsDown = require("./ThumbsDown");
+var _ThumbsDownFilled = require("./ThumbsDownFilled");
+var _ThumbsUp = require("./ThumbsUp");
+var _ThumbsUpFilled = require("./ThumbsUpFilled");
 var _Tier = require("./Tier1");
 var _Timeline = require("./Timeline");
 var _Title = require("./Title");

@@ -22,8 +22,8 @@ those files, then regenerate both packages. Do not hand-edit generated React
 components or copy SVG paths into the Literary Universe application.
 
 - Use `viewBox="0 0 32 32"` and `xmlns="http://www.w3.org/2000/svg"`.
-- Preserve the artwork's viewBox when importing existing designs: `Settings`
-  intentionally uses `0 0 33 32`. Do not stretch or crop it to force a square.
+- Preserve the artwork's viewBox when importing existing designs. Do not
+  stretch or crop it to force a square.
 - Use paths where practical. Preserve `fill="none"`, `fill-rule`, `clip-rule`,
   `stroke="currentColor"`, stroke widths, caps and joins when they affect the
   drawing. Stroke-to-fill conversion is optional; removing these attributes
