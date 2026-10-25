@@ -29,7 +29,7 @@
     "@storybook/html": "^10.6.0",
     "@storybook/react": "^10.6.0",
     "@storybook/react-vite": "^10.6.0",
-    "storybook": "^10.6.0",
+    "storybook": "^10.6.2",
     "@types/node": "^20.19.43",
     "babel-loader": "^10.1.1",
     "core-js": "^3.50.0",
