@@ -3073,8 +3073,8 @@ packages:
     peerDependencies:
       postcss: ^8.1.0
 
-  postcss-selector-parser@7.1.0:
-    resolution: {integrity: sha512-8sLjZwK0R+JlxlYcTuVnyT2v+htpdrjDOKuMcOVdYjt52Lh8hWRYpxBPoKx/Zg+bcjc3wx6fmQevMmUztS/ccA==}
+  postcss-selector-parser@7.1.6:
+    resolution: {integrity: sha512-7qASPzhKF2l2KLboRZux8CCTRMdGiV08vWmyKzPz22qZ7ZjQBOeY7rNzNoCLSUiftJ7HUq0GERHmxw/t0dCdMw==}
     engines: {node: '>=4'}
 
   postcss-value-parser@4.2.0:
@@ -4610,7 +4610,7 @@ snapshots:
   '@percy/cli-command@1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)':
     dependencies:
       '@percy/config': 1.32.8(typescript@5.9.3)
-      '@percy/core': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
+      '@percy/core': 1.32.8(supports-color@8.1.1)(typescript@5.9.3)
       '@percy/logger': 1.32.8
       glob-to-regexp: 0.4.1
     optionalDependencies:
@@ -4632,12 +4632,12 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@percy/cli-doctor@1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)':
+  '@percy/cli-doctor@1.32.8(supports-color@8.1.1)(typescript@5.9.3)':
     dependencies:
       '@percy/cli-command': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
       '@percy/client': 1.32.8(supports-color@8.1.1)(typescript@5.9.3)
       '@percy/config': 1.32.8(typescript@5.9.3)
-      '@percy/core': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
+      '@percy/core': 1.32.8(supports-color@8.1.1)(typescript@5.9.3)
       '@percy/env': 1.32.8
       '@percy/logger': 1.32.8
       '@percy/monitoring': 1.32.8(supports-color@8.1.1)(typescript@5.9.3)
@@ -4646,7 +4646,6 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - supports-color
-      - typanion
       - typescript
       - utf-8-validate
 
@@ -4692,7 +4691,7 @@ snapshots:
       '@percy/cli-build': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
       '@percy/cli-command': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
       '@percy/cli-config': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
-      '@percy/cli-doctor': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
+      '@percy/cli-doctor': 1.32.8(supports-color@8.1.1)(typescript@5.9.3)
       '@percy/cli-exec': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
       '@percy/cli-snapshot': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
       '@percy/cli-upload': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
@@ -4770,7 +4769,7 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@percy/core@1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)':
+  '@percy/core@1.32.8(supports-color@8.1.1)(typescript@5.9.3)':
     dependencies:
       '@grpc/grpc-js': 1.14.4
       '@grpc/proto-loader': 0.8.1
@@ -4794,11 +4793,10 @@ snapshots:
       ws: 8.18.0
       yaml: 2.4.2
     optionalDependencies:
-      '@percy/cli-doctor': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
+      '@percy/cli-doctor': 1.32.8(supports-color@8.1.1)(typescript@5.9.3)
     transitivePeerDependencies:
       - bufferutil
       - supports-color
-      - typanion
       - typescript
       - utf-8-validate
 
@@ -7012,20 +7010,20 @@ snapshots:
     dependencies:
       icss-utils: 5.1.0(postcss@8.5.14)
       postcss: 8.5.14
-      postcss-selector-parser: 7.1.0
+      postcss-selector-parser: 7.1.6
       postcss-value-parser: 4.2.0
 
   postcss-modules-scope@3.2.1(postcss@8.5.14):
     dependencies:
       postcss: 8.5.14
-      postcss-selector-parser: 7.1.0
+      postcss-selector-parser: 7.1.6
 
   postcss-modules-values@4.0.0(postcss@8.5.14):
     dependencies:
       icss-utils: 5.1.0(postcss@8.5.14)
       postcss: 8.5.14
 
-  postcss-selector-parser@7.1.0:
+  postcss-selector-parser@7.1.6:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
