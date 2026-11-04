@@ -3452,9 +3452,9 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
-  systeminformation@5.27.11:
-    resolution: {integrity: sha512-K3Lto/2m3K2twmKHdgx5B+0in9qhXK4YnoT9rIlgwN/4v7OV5c8IjbeAUkuky/6VzCQC7iKCAqi8rZathCdjHg==}
-    engines: {node: '>=8.0.0'}
+  systeminformation@5.33.19:
+    resolution: {integrity: sha512-Zm7wGeCG7PqfvzegMJIzrxICopWqYCeLATVmvxOOci1isLcNVKgY4Fr0hhYQzvc7cgtK3377jQVChTFAnznOiA==}
+    engines: {node: '>=10.0.0'}
     os: [darwin, linux, win32, freebsd, openbsd, netbsd, sunos, android]
     hasBin: true
 
@@ -4610,7 +4610,7 @@ snapshots:
   '@percy/cli-command@1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)':
     dependencies:
       '@percy/config': 1.32.8(typescript@5.9.3)
-      '@percy/core': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
+      '@percy/core': 1.32.8(supports-color@8.1.1)(typescript@5.9.3)
       '@percy/logger': 1.32.8
       glob-to-regexp: 0.4.1
     optionalDependencies:
@@ -4632,12 +4632,12 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@percy/cli-doctor@1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)':
+  '@percy/cli-doctor@1.32.8(supports-color@8.1.1)(typescript@5.9.3)':
     dependencies:
       '@percy/cli-command': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
       '@percy/client': 1.32.8(supports-color@8.1.1)(typescript@5.9.3)
       '@percy/config': 1.32.8(typescript@5.9.3)
-      '@percy/core': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
+      '@percy/core': 1.32.8(supports-color@8.1.1)(typescript@5.9.3)
       '@percy/env': 1.32.8
       '@percy/logger': 1.32.8
       '@percy/monitoring': 1.32.8(supports-color@8.1.1)(typescript@5.9.3)
@@ -4646,7 +4646,6 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - supports-color
-      - typanion
       - typescript
       - utf-8-validate
 
@@ -4692,7 +4691,7 @@ snapshots:
       '@percy/cli-build': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
       '@percy/cli-command': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
       '@percy/cli-config': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
-      '@percy/cli-doctor': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
+      '@percy/cli-doctor': 1.32.8(supports-color@8.1.1)(typescript@5.9.3)
       '@percy/cli-exec': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
       '@percy/cli-snapshot': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
       '@percy/cli-upload': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
@@ -4770,7 +4769,7 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@percy/core@1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)':
+  '@percy/core@1.32.8(supports-color@8.1.1)(typescript@5.9.3)':
     dependencies:
       '@grpc/grpc-js': 1.14.4
       '@grpc/proto-loader': 0.8.1
@@ -4794,11 +4793,10 @@ snapshots:
       ws: 8.18.0
       yaml: 2.4.2
     optionalDependencies:
-      '@percy/cli-doctor': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
+      '@percy/cli-doctor': 1.32.8(supports-color@8.1.1)(typescript@5.9.3)
     transitivePeerDependencies:
       - bufferutil
       - supports-color
-      - typanion
       - typescript
       - utf-8-validate
 
@@ -4823,7 +4821,7 @@ snapshots:
       '@percy/config': 1.31.4(typescript@5.9.3)
       '@percy/logger': 1.31.4
       '@percy/sdk-utils': 1.31.4(supports-color@8.1.1)
-      systeminformation: 5.27.11
+      systeminformation: 5.33.19
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -4833,7 +4831,7 @@ snapshots:
       '@percy/config': 1.32.8(typescript@5.9.3)
       '@percy/logger': 1.32.8
       '@percy/sdk-utils': 1.32.8(supports-color@8.1.1)
-      systeminformation: 5.27.11
+      systeminformation: 5.33.19
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -7475,7 +7473,7 @@ snapshots:
       picocolors: 1.1.1
       sax: 1.6.1
 
-  systeminformation@5.27.11: {}
+  systeminformation@5.33.19: {}
 
   tapable@2.3.0: {}
 
