@@ -1646,10 +1646,9 @@ packages:
     resolution: {integrity: sha512-ipDqC8FrAl/76p2SSWKSI+H9tFwm7vYqXQrItCuiVPt26Km0jS+NzSsBWAaBusvSbQcfJG+JitdMm+wZAgTYqg==}
     hasBin: true
 
-  basic-ftp@5.0.5:
-    resolution: {integrity: sha512-4Bcg1P8xhUuqcii/S0Z9wiHIrQVPMermM1any+MX5GeGD7faD3/msQUDGLol9wOcz4/jbg/WJnGqoJF6LiBdtg==}
+  basic-ftp@5.3.1:
+    resolution: {integrity: sha512-bopVNp6ugyA150DDuZfPFdt1KZ5a94ZDiwX4hMgZDzF+GttD80lEy8kj98kbyhLXnPvhtIo93mdnLIjpCAeeOw==}
     engines: {node: '>=10.0.0'}
-    deprecated: Security vulnerability fixed in 5.2.1, please upgrade
 
   better-path-resolve@1.0.0:
     resolution: {integrity: sha512-pbnl5XzGBdrFU/wT4jqmJVPn2B6UHPBOhzMQkY/SPUPB6QtUXtmBHBIwCbXJol93mOpGMnQyP/+BB19q04xj7g==}
@@ -4610,7 +4609,7 @@ snapshots:
   '@percy/cli-command@1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)':
     dependencies:
       '@percy/config': 1.32.8(typescript@5.9.3)
-      '@percy/core': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
+      '@percy/core': 1.32.8(supports-color@8.1.1)(typescript@5.9.3)
       '@percy/logger': 1.32.8
       glob-to-regexp: 0.4.1
     optionalDependencies:
@@ -4632,12 +4631,12 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@percy/cli-doctor@1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)':
+  '@percy/cli-doctor@1.32.8(supports-color@8.1.1)(typescript@5.9.3)':
     dependencies:
       '@percy/cli-command': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
       '@percy/client': 1.32.8(supports-color@8.1.1)(typescript@5.9.3)
       '@percy/config': 1.32.8(typescript@5.9.3)
-      '@percy/core': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
+      '@percy/core': 1.32.8(supports-color@8.1.1)(typescript@5.9.3)
       '@percy/env': 1.32.8
       '@percy/logger': 1.32.8
       '@percy/monitoring': 1.32.8(supports-color@8.1.1)(typescript@5.9.3)
@@ -4646,7 +4645,6 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - supports-color
-      - typanion
       - typescript
       - utf-8-validate
 
@@ -4692,7 +4690,7 @@ snapshots:
       '@percy/cli-build': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
       '@percy/cli-command': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
       '@percy/cli-config': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
-      '@percy/cli-doctor': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
+      '@percy/cli-doctor': 1.32.8(supports-color@8.1.1)(typescript@5.9.3)
       '@percy/cli-exec': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
       '@percy/cli-snapshot': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
       '@percy/cli-upload': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
@@ -4770,7 +4768,7 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@percy/core@1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)':
+  '@percy/core@1.32.8(supports-color@8.1.1)(typescript@5.9.3)':
     dependencies:
       '@grpc/grpc-js': 1.14.4
       '@grpc/proto-loader': 0.8.1
@@ -4794,11 +4792,10 @@ snapshots:
       ws: 8.18.0
       yaml: 2.4.2
     optionalDependencies:
-      '@percy/cli-doctor': 1.32.8(supports-color@8.1.1)(typanion@3.14.0)(typescript@5.9.3)
+      '@percy/cli-doctor': 1.32.8(supports-color@8.1.1)(typescript@5.9.3)
     transitivePeerDependencies:
       - bufferutil
       - supports-color
-      - typanion
       - typescript
       - utf-8-validate
 
@@ -5623,7 +5620,7 @@ snapshots:
 
   baseline-browser-mapping@2.9.19: {}
 
-  basic-ftp@5.0.5: {}
+  basic-ftp@5.3.1: {}
 
   better-path-resolve@1.0.0:
     dependencies:
@@ -6261,7 +6258,7 @@ snapshots:
 
   get-uri@6.0.5(supports-color@8.1.1):
     dependencies:
-      basic-ftp: 5.0.5
+      basic-ftp: 5.3.1
       data-uri-to-buffer: 6.0.2
       debug: 4.3.4(supports-color@8.1.1)
     transitivePeerDependencies:
